@@ -1,1 +1,2 @@
-console.log('Hello, world!');
+let b = 'Hello,world!'
+console.log(b);
