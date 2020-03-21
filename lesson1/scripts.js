@@ -1,1 +1,2 @@
-document.querySelector('a').innerText = 'Hello world'
+let b = "Hello World"
+console.log(b);
