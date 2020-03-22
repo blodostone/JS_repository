@@ -1,40 +1,40 @@
 const a = 17;
-console.log('a: 17', typeof a);
+console.log('a: ', typeof a);
 
 const b = 17.17;
-console.log('b: 17.17', typeof b);
+console.log('b: ', typeof b);
 
 const c = '17';
-console.log("c: '17'", typeof c);
+console.log("c: ", typeof c);
 
 const d = "17";
-console.log('d: "17"', typeof d);
+console.log('d: ', typeof d);
 
 const e = "I'm a string";
-console.log('e: "Im a string"', typeof e);
+console.log('e: ', typeof e);
 
 const f = false;
-console.log('f: false', typeof f);
+console.log('f: ', typeof f);
 
 const g = true;
-console.log('g: true', typeof g);
+console.log('g: ', typeof g);
 
 const h = null;
-console.log('h: null', typeof h);
+console.log('h: ', typeof h);
 
 const i = undefined;
-console.log('i: undefind', typeof i);
+console.log('i: ', typeof i);
 
 const j = Symbol("I'm a Symbol");
-console.log('j: Symbol("Im a Symbol"', typeof j);
+console.log('j: ', typeof j);
 
 const k = { name: 'John' };
-console.log('k: { name: "John" }', typeof k);
+console.log('k: ', typeof k);
 
 const l = [1, 2, 3, 4];
-console.log('l: [1, 2, 3, 4]', typeof l);
+console.log('l: ', typeof l);
 
 const m = function run() {
     return 17;
 };
-console.log('m: function run() { return 17 }', typeof m);
+console.log('m: ', typeof m);
