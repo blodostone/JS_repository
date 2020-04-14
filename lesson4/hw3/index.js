@@ -1,12 +1,14 @@
-for (let m = 0; m <= 1000; m++) {
-    if (m % 2 != 0) {
-        sum = 0;
-        sum += m;
+let m = 1000;
+let sum = 0;
+
+for (let g = 0; g <= m; g++) {
+    if (g % 2 === 1) {
+        sum += g;
         console.log('Found');
     }
 
 
-    if (result * 5 > 5000) {
+    if (sum * 5 > 5000) {
         console.log("Bigger")
     } else {
         console.log('Smaller')
