@@ -1,7 +1,7 @@
-let g = 1;
 const m = 30;
 const n = 40;
 let result = 1;
+let g = 1;
 
 do {
     if (g % 2 === 1) {
@@ -9,7 +9,7 @@ do {
     }
 
     g++;
-} while (g <= n);
+} while (g <= m);
 
 
 console.log('Result: ' + result);
