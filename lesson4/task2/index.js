@@ -1,7 +1,7 @@
 const m = 30;
 const n = 40;
 let result = 1;
-let g = 2;
+let g = 30;
 
 do {
     if (g % 2 === 1) {
