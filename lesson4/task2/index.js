@@ -1,15 +1,8 @@
-let m = 30;
-let n = 40;
 let result = 1;
-
-do {
-
+for (let m = 20; m <= 30; m++) {
     if (m % 2 === 1) {
         result *= m;
     }
-
-    m++;
-} while (m <= n);
-
+}
 
 console.log('Result: ' + result);
