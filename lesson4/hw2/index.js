@@ -26,4 +26,4 @@ do {
     g++;
     result = g;
 } while (g <= n)
-console.log('Result: ' + g);
+console.log('Result: ');
