@@ -12,17 +12,15 @@ do {
     if (g % 3 === 1) {
         result -= g;
     }
-    g++;
 
     if (g % 4 === 1) {
         result *= g;
     }
-    g++;
+
 
     if (g % 5 === 0) {
         result = g;
         console.log(g)
     }
-    g++;
 } while (g <= n);
 console.log('Result: ');
