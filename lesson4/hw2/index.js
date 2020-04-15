@@ -23,7 +23,7 @@ do {
         result = g;
         console.log(g)
     }
-    g++;
-} while (g <= n);
 
+} while (g <= n);
+result = g;
 console.log('Result: ');
