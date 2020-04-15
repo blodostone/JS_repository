@@ -19,10 +19,10 @@ do {
     }
     g++;
 
-    // if (g % 5) {
-    //     console.log()
-    // }
-    // g;
+    if (g % 5) {
+        console.log(g)
+    }
+    g;
 } while (g <= n);
 
 console.log('Result: ' + result);
