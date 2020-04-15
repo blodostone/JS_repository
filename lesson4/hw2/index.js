@@ -4,14 +4,13 @@ let result = 1;
 let g = 20;
 
 do {
-    if (g % 2 != 4) {
+    if (g % 2 === 0) {
         result += g;
     }
     g++;
 
     if (g % 3 === 0) {
         result -= g;
-
     }
 
     if (g % 4 === 0) {
