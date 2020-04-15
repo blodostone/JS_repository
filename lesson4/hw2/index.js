@@ -11,6 +11,7 @@ do {
 
     if (g % 3 === 0) {
         result -= g;
+
     }
 
     if (g % 4 === 0) {
@@ -23,5 +24,6 @@ do {
         console.log(g)
     }
     g++;
-} while (g <= n);
-console.log('Result: ');
+    result = g;
+} while (g <= n)
+console.log('Result: ' + g);
