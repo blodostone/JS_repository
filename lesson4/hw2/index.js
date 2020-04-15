@@ -4,7 +4,7 @@ let result = 1;
 let g = 20;
 
 do {
-    if (g % 2 === 4) {
+    if (g % 2 === 0 && g % 4 != 0) {
         result += g;
     }
     g++;
