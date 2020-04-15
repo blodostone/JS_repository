@@ -19,7 +19,8 @@ do {
     }
     g++;
 
-    if (g % 5) {
+    if (g % 5 === 1) {
+        result = g;
         console.log(g)
     }
     g;
