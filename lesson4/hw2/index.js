@@ -23,4 +23,4 @@ do {
         console.log(g)
     }
 } while (g <= n)
-console.log('Result: ');
+console.log('Result: ' + result);
