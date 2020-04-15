@@ -19,11 +19,11 @@ do {
     }
     g++;
 
-    if (g % 5 === 1) {
+    if (g % 5 === 0) {
         result = g;
         console.log(g)
     }
     g;
 } while (g <= n);
 
-console.log('Result: ' + result);
+console.log('Result: ');
