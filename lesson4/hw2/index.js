@@ -20,7 +20,6 @@ do {
     g++;
 
     if (g % 5 === 0) {
-        result = g;
         console.log(g)
     }
 
