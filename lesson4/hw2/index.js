@@ -24,6 +24,5 @@ do {
         console.log(g)
     }
     g++;
-    result = g;
 } while (g <= n)
 console.log('Result: ');
