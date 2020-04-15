@@ -25,5 +25,4 @@ do {
     }
 
 } while (g <= n);
-result = g;
-console.log('Result: ');
+console.log('Result: ' + result);
