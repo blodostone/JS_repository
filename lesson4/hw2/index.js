@@ -7,13 +7,13 @@ do {
     if (g % 2 != 4) {
         result += g;
     }
-    g++;
 
-    if (g % 3 === 1) {
+
+    if (g % 3 === 0) {
         result -= g;
     }
 
-    if (g % 4 === 1) {
+    if (g % 4 === 0) {
         result *= g;
     }
 
@@ -22,5 +22,6 @@ do {
         result = g;
         console.log(g)
     }
+    g++;
 } while (g <= n);
 console.log('Result: ');
