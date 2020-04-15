@@ -7,7 +7,7 @@ do {
     if (g % 2 != 4) {
         result += g;
     }
-
+    g++;
 
     if (g % 3 === 0) {
         result -= g;
@@ -23,6 +23,5 @@ do {
         result = g;
         console.log(g)
     }
-    g++;
 } while (g <= n)
 console.log('Result: ');
