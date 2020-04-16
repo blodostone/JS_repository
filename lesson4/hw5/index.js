@@ -13,11 +13,9 @@ for (let min = 0; min <= max; min++) {
 
 let int = 0;
 int = result / 1234;
-console.log(int);
 
 let get = 0;
 get = result % 1234;
-console.log(get);
 
 switch (int < get) {
     case true:
