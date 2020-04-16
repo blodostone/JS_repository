@@ -15,4 +15,4 @@ function getPrimes(n) {
     }
 }
 
-console.log(getPrimes(10));
+console.log(getPrimes(7));
