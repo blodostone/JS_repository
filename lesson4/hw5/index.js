@@ -17,7 +17,7 @@ int = result / 1234;
 let get = 0;
 get = result % 1234;
 
-switch (int < get) {
+switch (get < int) {
     case true:
         console.log(true)
         break;
