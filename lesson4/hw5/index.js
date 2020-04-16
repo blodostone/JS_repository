@@ -19,10 +19,12 @@ let get = 0;
 get = result % 1234;
 console.log(get);
 
-switch (result) {
-    case (true):
-        int <= get;
-    case (false):
-        get <= int;
+switch (int < get) {
+    case true:
+        console.log(true)
+        break;
+    case false:
+        console.log(false);
+        break;
     default:
 }
