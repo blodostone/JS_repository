@@ -1,7 +1,5 @@
-let a = 6;
-
-function sum(waiter) {
-    let i = a + waiter;
-    console.log(i);
+function sum(a, b) {
+    return a + b;
 }
-sum(4);
+const result = sum(5, 9);
+console.log(result);
