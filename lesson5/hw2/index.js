@@ -1,6 +1,6 @@
 function isPrime(m) {
-    for (let g = 2; g < m; g += 1) {
-        if (m % g === 0) {
+    for (let i = 2; i < m; i += 1) {
+        if (m % i === 0) {
             return false;
         }
         return true;
@@ -9,9 +9,9 @@ function isPrime(m) {
 
 
 function getPrimes(n) {
-    for (let g = 2; g <= n; g += 1) {
-        if (isPrime(g)) {
-            console.log(g);
+    for (let i = 2; i <= n; i += 1) {
+        if (isPrime(i)) {
+            console.log(i);
         }
     }
 }
