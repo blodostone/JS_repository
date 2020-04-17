@@ -1,19 +1,10 @@
-function isPrime(m) {
-    for (let i = 2; i < m; i += 1) {
-        if (m % i === 0) {
-            return false;
-        }
-        return true;
-    }
-}
-
-
 function getPrimes(n) {
-    for (let i = 2; i <= n; i += 1) {
-        if (isPrime(i)) {
-            console.log(i);
+    outer: for (let i = 2; i <= n; i++) {
+        for (let g = 2; g * g <= i; g++) {
+            if (i % g == 0) {
+                continue outer;
+            }
         }
+        console.log(i);
     }
 }
-
-console.log(getPrimes(10));
