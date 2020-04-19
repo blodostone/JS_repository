@@ -1,5 +1,10 @@
-const increaser = (a, index) => a * index;
+let a = 12;
+let index = 6;
+let b;
 
-const result = increaser(6, 3);
-
-console.log(result);
+function increaser() {
+    console.log(a * index);
+    b = a * index;
+}
+increaser();
+console.log(b);
