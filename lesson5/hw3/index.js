@@ -1,10 +1,13 @@
-let a = 12;
-let index = 6;
-let b;
+function increaser(a, index) {
+    for (; a * index; a++) {
 
-function increaser() {
-    console.log(a * index);
-    b = a * index;
+        if (a > index) {
+            return true;
+        } else if (a <= index) {
+            return false;
+        }
+    }
+    return a;
 }
-increaser();
-console.log(b);
+
+console.log(increaser(12, 6));
