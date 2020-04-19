@@ -2,7 +2,7 @@ function increaser(a, index) {
     for (; a * index; a++) {
 
         if (a > index) {
-            return true;
+            return a;
         } else if (a <= index) {
             return false;
         }
