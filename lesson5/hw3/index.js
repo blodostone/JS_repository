@@ -1,13 +1,10 @@
 function increaser(a, index) {
-    for (; a * index; a++) {
-
-        if (a > index) {
-            return a;
-        } else if (a <= index) {
-            return false;
-        }
+    if (a > index) {
+        return a + index;
+    } else {
+        return a;
     }
-    return a;
 }
+
 
 console.log(increaser(12, 6));
