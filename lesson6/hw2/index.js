@@ -7,7 +7,11 @@ function squareArray(arr) {
     for (let g = 0; g < arr.length; g += 1) {
         const square = arr[g] * arr[g];
         result.push(square);
+        if (!Array.isArray(arr)) {
+            return null;
+        }
     }
+
     return result;
 }
 
