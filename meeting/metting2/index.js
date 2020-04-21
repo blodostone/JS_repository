@@ -2,13 +2,13 @@
 // output: bool (true/false)
 
 function some(arr) {
-    for (let g = 0; g < arr.length; g += 1) {
-        if (arr[g] % 3 !== 0) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
             return true;
         }
 
     }
-    return true;
+    return false;
 }
 
 const numbers = [32, 56, 31, 4, 55];
