@@ -1,16 +1,15 @@
-const number = [2, 6, 10, 14, 18]
-
 function reverseArray(arr) {
-    let result = 0;
+    let result = [];
     if (!Array.isArray(arr)) {
         return null;
     }
-    const reversed = arr.reverse();
-    result = reversed;
+    const [a, b, ...rest] = arr;
 
-    return result;
+    return [...rest, b, a];
 }
 
-const reverseAnwser = reverseArray(number);
+const number = [2, 6, 10, 14, 18];
+const switchArray = reverseArray(number);
 
-console.log(reverseAnwser);
+console.log(switchArray);
+console.log(number);
