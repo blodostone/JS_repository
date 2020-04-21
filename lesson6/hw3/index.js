@@ -1,5 +1,5 @@
 function checkSum(arr) {
-    let sum = [];
+    let sum = 0;
     for (let g = 0; g < arr.length; g += 1) {
         sum += arr[g];
         if (arr[g] > 100 === 0) {
