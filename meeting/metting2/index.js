@@ -8,11 +8,11 @@ function some(arr) {
         }
 
     }
-    return false;
+    return true;
 }
 
 const numbers = [32, 56, 31, 4, 55];
 
 const result = some(numbers);
 
-console.log(result);
+console.log('result', result);
