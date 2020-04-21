@@ -1,11 +1,11 @@
 function createEmptyArray(len) {
     let emptyArray = [];
     for (let g = 0; g <= len.length; g++) {
-        emptyArray = len[g];
+        emptyArray.push('');
     }
     return emptyArray;
 }
 
-const arrayEmpty = createEmptyArray([]);
+const arrayEmpty = createEmptyArray(8);
 
 console.log(arrayEmpty);
