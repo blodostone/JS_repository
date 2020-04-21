@@ -5,3 +5,7 @@ function createEmptyArray(len) {
     }
     return emptyArray;
 }
+
+const arrayEmpty = createEmptyArray([]);
+
+console.log(arrayEmpty);
