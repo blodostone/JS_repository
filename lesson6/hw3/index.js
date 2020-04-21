@@ -1,17 +1,20 @@
 function checkSum(arr) {
-    let sum = 0;
-    for (let g = 0; g < arr.length; g++) {
+    let sum = [];
+    for (let g = 0; g < arr.length; g += 1) {
         sum += arr[g];
-        if (g) {
-
+        if (arr[g] > 100 === 0) {
+            return true;
+        } else {
+            return false;
         }
     }
     if (!Array.isArray(arr)) {
         return null;
     }
+    return sum;
 }
 
 let number = (23, 13, 9, 42)
-const sum = checkSum(number);
+const sumAnswer = checkSum(number);
 
-console.log(sum);
+console.log(sumAnswer);
