@@ -1,14 +1,9 @@
-const number = ['', '', '', '', '']
-
-
 function createEmptyArray(len) {
-    let emptyArray = [];
-    for (let g = 0; g < len.length; g++) {
-        emptyArray.push(g);
+    for (let g = 4; g <= len.length; g++) {
+        return [len.length];
     }
-    return emptyArray;
 }
 
-const arrayEmpty = createEmptyArray(number);
+const array = createEmptyArray(['', '', '', '', ]);
 
-console.log(arrayEmpty);
+console.log(array);
