@@ -29,13 +29,13 @@ console.log(subArray)
 
 
 
-function getSubArray(arr) {
+// function getSubArray(arr) {
 
-    return [arr[0], arr[1]]
-}
+//     return [arr[0], arr[1]]
+// }
 
-let number = [11, 4, 8, 3, 5];
+// let number = [11, 4, 8, 3, 5];
 
-const arrayAnswer = getSubArray(number);
+// const arrayAnswer = getSubArray(number);
 
-console.log(arrayAnswer);
+// console.log(arrayAnswer);
