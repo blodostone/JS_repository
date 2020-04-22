@@ -1,12 +1,12 @@
 let number = [1, 2, 3, 4, 5];
 let myObject = {
-    test: function(arr) {
+    test: function getSubArray(arr) {
         return arr < 4;
     }
 };
 
 let filtered = number.filter(
-    function(arr) {
+    function getSubArray(arr) {
         return this.test(arr);
     }, myObject
 );
