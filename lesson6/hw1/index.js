@@ -1,7 +1,8 @@
 function createEmptyArray(len) {
-    return [len.length[0], len[0], len[len.length - 1]];
+    let emptyArray = [len.length, len[0], len[len.length - 1]];
+    return emptyArray;
 }
 
-const array = createEmptyArray([]);
+const array = createEmptyArray([, , , , , ]);
 
 console.log(array);
