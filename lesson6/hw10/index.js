@@ -1,27 +1,32 @@
 // let n = 3;
-
 // let number = [1, 2, 3, 4, 5];
-// let myObject = {
-//     test: function getSubArray(arr) {
-//         return arr <= n;
+
+// number.forEach(getSubArray => {
+
 //     }
-// };
 
-// let result = number.filter(
 //     function getSubArray(arr) {
-//         return this.test(arr);
-//     }, myObject
-// );
 
-// console.log(result);
+//     })
 
-let n = 3;
 
-let thirdArray = [1, 2, 3, 4, 5].filter(function getSubArray(arr) {
-    return arr <= n;
-})
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(thirdArray);
+function getSubArray(arr, n) {
+
+    let num = [];
+
+    arr.forEach(function(a, index) {
+        if (index < n) {
+            num.push(a)
+        }
+    });
+    return num;
+}
+const subArray = getSubArray(numbers, 3)
+console.log(subArray)
+
+
 
 
 function getSubArray(arr) {
