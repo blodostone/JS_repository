@@ -4,6 +4,6 @@ function createEmptyArray(len) {
     }
 }
 
-const array = createEmptyArray([, , , , ]);
+const array = createEmptyArray([, , , , , , ]);
 
 console.log(array);
