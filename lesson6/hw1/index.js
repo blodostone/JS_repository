@@ -1,5 +1,5 @@
 function createEmptyArray(len) {
-    let emptyArray = new Object();
+    let emptyArray = new Array(len);
     return emptyArray;
 }
 const array = createEmptyArray(6);
