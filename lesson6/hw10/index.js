@@ -22,3 +22,15 @@ let thirdArray = [1, 2, 3, 4, 5].filter(function getSubArray(arr) {
 })
 
 console.log(thirdArray);
+
+
+function getSubArray(arr) {
+
+    return [arr[0], arr[1]]
+}
+
+let number = [11, 4, 8, 3, 5];
+
+const arrayAnswer = getSubArray(number);
+
+console.log(arrayAnswer);
