@@ -1,11 +1,11 @@
-const increaseEvenEl = (numbers, element) => {
+const increaseEvenEl = (numbers) => {
     if (!Array.isArray(numbers)) {
         return null;
     }
 
-    const evenEl = arr.map(num => {
-        return num + delta;
 
+    const evenEl = arr.map(item => {
+        return item + delta;
     });
     return evenEl;
 }
