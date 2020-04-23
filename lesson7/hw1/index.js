@@ -1,12 +1,10 @@
 const squareArray = numbers => {
-    // if (!Array.isArray(arr)) {
-    //     return null;
-    // }
-
-    const result = numbers.map(num => num * num);
-    if (!Array.isArray(arr)) {
+    if (!Array.isArray(numbers)) {
         return null;
     }
+
+    const result = numbers.map(num => num * num);
+
 
     return result;
 }
