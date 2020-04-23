@@ -2,10 +2,11 @@ const reverseArray = numbers => {
     if (!Array.isArray(numbers)) {
         return null;
     }
+    const copy = numbers.slice();
 
-    numbers.reverse((a, b) => b - a);
+    copy.reverse((a, b) => b - a);
 
-    return numbers;
+    return copy;
 }
 
 // const copy = numbers.slice();
