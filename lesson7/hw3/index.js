@@ -1,21 +1,14 @@
-const increaseEvenEl = (numbers) => {
-    if (!Array.isArray(numbers)) {
+const increaseEvenEl = (arr, delta) => {
+    if (!Array.isArray(arr)) {
         return null;
     }
-
-
-    const evenEl =
-        arr.map(item => {
-            return item + delta;
-        });
-    arr.filter(item => {
-        return item % 2;
+    let sum = [];
+    const evenElr = arr.map(item => {
+        return item + delta;
     });
 
-    return evenEl;
+    return evenElr;
 }
 
-const arr = [2, 5, 6, 8, 11, 9, 4];
-const delta = 20;
-
-console.log(increaseEvenEl(arr, delta));
+const numbers = [2, 5, 6, 8, 11, 9, 4];
+console.log(increaseEvenEl(numbers, 20));
