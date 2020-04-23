@@ -4,9 +4,14 @@ const increaseEvenEl = (numbers) => {
     }
 
 
-    const evenEl = arr.map(item => {
-        return item + delta;
+    const evenEl =
+        arr.map(item => {
+            return item + delta;
+        });
+    arr.filter(item => {
+        return item % 2;
     });
+
     return evenEl;
 }
 
