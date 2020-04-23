@@ -2,7 +2,7 @@ const arrAverage = numbers => {
     if (!Array.isArray(numbers)) {
         return null;
     }
-    const avgArray = numbers.reduce((a, b) => a + b, 0)
+    const avgArray = numbers.reduce((a, b) => (a + b)) / numbers.length
 
     return avgArray;
 }
