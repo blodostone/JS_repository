@@ -1,12 +1,16 @@
 const reverseArray = numbers => {
-    if (!Array.isArray(arr)) {
+    if (!Array.isArray(numbers)) {
         return null;
     }
 
-    const result = numbers.slice().sort((a, b) => b - a);
+    numbers.reverse((a, b) => b - a);
 
-    return result;
+    return numbers;
 }
+
+// const copy = numbers.slice();
+// const copy = [...numbers];
+
 
 const arr = [2, 4, 30, 1, 5, 21];
 
