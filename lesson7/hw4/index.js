@@ -2,9 +2,9 @@ const cloneArr = numbers => {
     if (!Array.isArray(numbers)) {
         return null;
     }
-    numbers.slice();
+    const newArray = numbers.slice();
 
-    return numbers;
+    return newArray;
 
 }
 
