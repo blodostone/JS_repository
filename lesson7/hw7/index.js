@@ -2,8 +2,8 @@
 //     const dfgdfg = .filter
 
 
-const filterItems = (people, text) => {
-    const filterPeople = people.filter(name => {
+const filterItems = (arr, text) => {
+    const filterPeople = arr.filter(name => {
         return name.includes(text) && name.length > 5;
     });
     return filterPeople;
