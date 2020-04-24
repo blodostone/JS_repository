@@ -2,7 +2,7 @@
 //     const dfgdfg = .filter
 
 
-const filterItems = (arr, text) => {
+const filterNames = (arr, text) => {
     const filterPeople = arr.filter(name => {
         return name.includes(text) && name.length > 5;
     });
@@ -17,4 +17,4 @@ const filterItems = (arr, text) => {
 
 
 const arr = ['Aleksandr', 'Anatoliy', 'Marina', 'Kate', 'Bob', 'Tom'];
-console.log(filterItems(arr, 'a'));
+console.log(filterNames(arr, 'a'));
