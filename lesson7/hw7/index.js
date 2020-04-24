@@ -18,5 +18,3 @@ const filterItems = (people, text) => {
 
 const arr = ['Aleksandr', 'Anatoliy', 'Marina', 'Kate', 'Bob', 'Tom'];
 console.log(filterItems(arr, 'a'));
-
-console.log(arr);
