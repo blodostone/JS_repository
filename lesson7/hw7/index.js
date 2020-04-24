@@ -3,12 +3,9 @@
 
 
 const filterItems = (people, text) => {
-    const filterPeople = people
-        .filter(name => name.includes(text));
-
-
-
-
+    const filterPeople = people.filter(name => {
+        return name.includes(text) && name.length > 5;
+    });
     return filterPeople;
 
 }
@@ -19,9 +16,7 @@ const filterItems = (people, text) => {
 // );
 
 
-const arr = ['Kolya', 'Tolya', 'Marina', 'Kate'];
-const text = ('ya');
+const arr = ['Aleksandr', 'Anatoliy', 'Marina', 'Kate', 'Bob', 'Tom'];
+console.log(filterItems(arr, 'a'));
 
-console.log(filterItems(arr, text));
-
-// console.log(arr);
+console.log(arr);
