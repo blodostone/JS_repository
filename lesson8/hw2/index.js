@@ -4,25 +4,23 @@ const user = {
 };
 
 /* присвойте объекту свойство hobby со значением 'football' с помощью точки */
-user.nobby = 'football'
+user.hobby = 'football';
 
 const anotherKey = 'married';
 /* название свойства хранится в переменной anotherKey. Присвойте объекту такое свойство со значением false */
-console.log(user === anotherKey)
+user.married = false;
 
 /* присвойте объекту свойство 'favorite music' со значением 'rock' */
-user['favorite music'] = 'rock'
+user['favorite music'] = 'rock';
 
 
 /* присвойте объекту свойство 'address', которое будет пустым объкетом */
-user.adress = {},
+user.adress = {};
 
-    /* присвойте объекту в 'address' свойство 'country', со значением 'Ukraine' */
-    user.adress.country = "Ukraine",
+/* присвойте объекту в 'address' свойство 'country', со значением 'Ukraine' */
+user.adress.country = "Ukraine";
 
-    /* присвойте объекту в 'address' свойство 'building', со значением 17 */
-    user.adress.building = 17,
-    /* выведите в консоль объект user */
-
-
-    console.log(user);
+/* присвойте объекту в 'address' свойство 'building', со значением 17 */
+user.adress.building = 17;
+/* выведите в консоль объект user */
+console.log(user);
