@@ -17,7 +17,7 @@ const result = mergeObjectsV1(obj1, obj2);
 console.log(result);
 
 const mergeObjectsV2 = (obj2, obj1) => {
-    const assignObject2 = Object.assign({}, obj2, obj1);
+    const assignObject2 = Object.assign({}, (obj2), obj1);
     return assignObject2;
 }
 
