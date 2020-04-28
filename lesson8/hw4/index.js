@@ -20,9 +20,9 @@ const addPropertyV2 = (userData, userId) => {
 const result1 = addPropertyV2(userData, 2345);
 console.log(result1);
 
-const addPropertyV3 = (userData2, userId) => {
-    const thirdProperty = Object.assign(userData2, { id: userId });
+const addPropertyV3 = (userData, userId) => {
+    const thirdProperty = Object.assign(userData, { id: userId });
     return thirdProperty;
 }
-const result2 = addPropertyV3(userData2, 2345);
+const result2 = addPropertyV3(userData, 2345);
 console.log(result2);
