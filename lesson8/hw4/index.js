@@ -1,9 +1,6 @@
 const userData = {
     name: 'Sam'
 }
-const userData2 = {
-    name: 'Sam'
-}
 
 
 const addPropertyV1 = (userData, userId) => {
