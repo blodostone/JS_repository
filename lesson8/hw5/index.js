@@ -6,8 +6,8 @@ const user = {
 
 
 const addPropertyV1 = (obj, key, value) => {
-    const computedProperty1 = obj
-    return computedProperty1;
+    obj[key] = value;
+    return obj;
 }
 const result = addPropertyV1(user, "currency", 'USD');
 // console.log(result);
@@ -34,11 +34,10 @@ console.log(result3)
 
 
 
-// const addPropertyV4 = (obj, key, value) => {
-//     const computedProperty4 = {},
-//         obj, { key: value };
-//     return computedProperty4;
-// }
-// const result4 = addPropertyV1(user, "currency", 'USD');
+const addPropertyV4 = (obj, key, value) => {
+    const computedProperty4 = {...obj, [key]: value };
+    return computedProperty4;
+}
+const result4 = addPropertyV1(user, "currency", 'USD');
 
-// console.log(result4);
+console.log(result4);
