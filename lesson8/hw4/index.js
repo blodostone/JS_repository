@@ -11,9 +11,6 @@ const result = addPropertyV1(userData, 2345);
 console.log(result);
 
 
-
-
-
 const addPropertyV2 = (userData, userId) => {
     const secondProperty = Object.assign(userData, { id: userId });
     return secondProperty;
@@ -33,7 +30,6 @@ console.log(result3);
 const addPropertyV4 = (userData, userId) => {
     const firstProperty = {...userData, id: userId };
     return firstProperty;
-
 }
 const result4 = addPropertyV4(userData, 2345);
 console.log(result4);
