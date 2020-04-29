@@ -10,7 +10,7 @@ const addPropertyV1 = (obj, key, value) => {
     return obj;
 }
 const result = addPropertyV1(user, "currency", 'USD');
-// console.log(result);
+console.log(result);
 
 
 const addPropertyV2 = (obj, key, value) => {
