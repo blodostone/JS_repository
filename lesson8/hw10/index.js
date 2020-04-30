@@ -15,12 +15,11 @@ const users = {
 
 
 function getAdults(users) {
-    let result = [];
+    let result = {};
     for (let g in users) {
         if (users[g] >= 18) {
             result[g] = users[g];
         }
-        return false;
     }
     return result;
 }
