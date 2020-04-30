@@ -3,6 +3,6 @@ const user = {
     key: 17,
 };
 
-const copyObj = {...user };
+const copyObj = Object.assign({}, user);
 
 console.log(copyObj);
