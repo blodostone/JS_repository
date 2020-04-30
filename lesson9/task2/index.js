@@ -3,6 +3,9 @@ const user = {
     key: 17,
 };
 
-const copyObj = Object.assign({}, user);
+const copyObj = man => {
+    const copyUser = Object.assign({}, man);
+    return copyUser;
+}
 
-console.log(copyObj);
+console.log(user);
