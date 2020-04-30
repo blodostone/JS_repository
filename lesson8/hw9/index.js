@@ -6,11 +6,24 @@ const obj = {
 }
 
 
-const pickProps = (mainobj, arr) => {
-    const chaiceArr = Object.values(mainobj = arr);
-    return chaiceArr;
-}
+// const pickProps = (mainobj, arr) => {
+//     const chaiceArr = Object.keys(mainobj = arr);
+//     return chaiceArr;
+// }
 
-const result = pickProps(obj, [2, 4]);
+// const result = pickProps(obj, ['b', 'd']);
 
-console.log(result);
+// console.log(result);
+
+const arr = ['b', 'd'];
+const pickProps = (obj, arr) => {
+    let result = {};
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] in obj) {
+            result[arr[i]] = obj[arr[i]];
+        }
+    }
+    return result;
+};
+const result = pickProps(obj, arr)
+console.log(result)
