@@ -7,8 +7,8 @@ const users = {
 
 
 
-const getAbults = usersMain => Object.entries(usersMain)
+const getAdults = usersMain => Object.entries(usersMain)
     .filter(user => user[1] >= 18)
     .map(user => user[0]);
 
-console.log(getAbults(users));
+console.log(getAdults(users));
