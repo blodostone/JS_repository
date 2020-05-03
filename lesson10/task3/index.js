@@ -7,4 +7,3 @@ const multiRound = num => [
 ];
 
 console.log(multiRound(-Math.PI));
-console.log(multiRound(Math.PI));
