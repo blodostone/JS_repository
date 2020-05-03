@@ -1,4 +1,4 @@
-const muiltiRound = num => [
+const multiRound = num => [
     Math.round(num * 100) / 100,
     Math.floor(num * 100) / 100,
     Math.ceil(num * 100) / 100,
@@ -6,4 +6,4 @@ const muiltiRound = num => [
     num.toFixed(2),
 ];
 
-console.log(muiltiRound(Math.PI));
+console.log(multiRound(Math.PI));
