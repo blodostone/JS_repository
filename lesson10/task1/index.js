@@ -1,13 +1,13 @@
 const arr = [12, 12.5, NaN, Infinity, 'text'];
 
-function getFininteNumbers(num) {
+function getFiniteNumbers(num) {
     const getNum = num.filter(sum => Number.isFinite(sum));
     return getNum;
 }
-// const result = getFininteNumbers(arr);
+// const result = getFiniteNumbers(arr);
 // console.log(result);
 
-function getFininteNumbersV2(num) {
+function getFiniteNumbersV2(num) {
     const isFiniteNum = num.filter(sum => isFinite(sum));
     return isFiniteNum;
 }
