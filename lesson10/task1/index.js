@@ -24,7 +24,7 @@ function getNaN(nan) {
 
 
 function getNaNV2(nan) {
-    const getNanFunV2 = nan.filter(sum => Number.isNaN(sum));
+    const getNanFunV2 = nan.filter(sum => isNaN(sum));
     return getNanFunV2;
 }
 // const result4 = getNaNV2(arr);
