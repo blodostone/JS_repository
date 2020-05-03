@@ -1,30 +1,39 @@
+const arr = [12, 12.5, NaN, Infinity, 'text'];
+
 function getFininteNumbers(num) {
-    const getNum = num.filter(sum => getFininteNumbers.isFinite(item));
+    const getNum = num.filter(sum => Number.isFinite(sum));
     return getNum;
 }
+const result = getFininteNumbers(arr);
+console.log(result)
 
 function getFininteNumbersV2(num) {
-    const isFiniteNum = num.filter(sum => isFinite(num));
+    const isFiniteNum = num.filter(sum => isFinite(sum));
     return isFiniteNum;
 }
+const result2 = getFininteNumbersV2(arr);
+console.log(result2);
 
 
 function getNaN(nan) {
-    const getNanFun = nan.filter(sum => Number.isNaN(nan));
+    const getNanFun = nan.filter(sum => Number.isNaN(sum));
     return getNanFun;
 }
+const result3 = getNaN(arr);
+console.log(result3);
 
 
 function getNaNV2(nan) {
-    const getNanFunV2 = nan.filter(sum => Number.isNaN(nan));
+    const getNanFunV2 = nan.filter(sum => Number.isNaN(sum));
     return getNanFunV2;
 }
+const result4 = getNaNV2(arr);
+console.log(result4);
 
 
 function getIntegers(dontfull) {
-    const intArr = dontfull.filter(sum => Number.isInteger(dontfull));
+    const intArr = dontfull.filter(sum => Number.isInteger(sum));
     return intArr;
 }
-
-
-const arr = [12, 12.5, NaN, Infinity, 'text'];
+const result5 = getIntegers(arr);
+console.log(result5);
