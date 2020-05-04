@@ -1,3 +1,12 @@
+// 1. Создать ф-цию `getRandomNumbers`, которая принимает нужные аргументы и возвращает массив
+// 2. Вернуть `null`, если задан неверный промежуток
+// 3. Вернуть `null`, если в промежутке нету целых чисел
+// 4. Создать массив нужной длинны
+// 5. Заполнить его случайными числами по формуле `(from + (to - from) * Math.random())` в цикле `.map`
+// 6. Округлить все значение в нужную сторону в еще одном цикле `.map`
+
+
+
 // function getRandomNumbers(length, start, end) {
 //     let arr = new Array(length);
 //     if (min > max) {
@@ -18,10 +27,20 @@
 
 
 const getRandomNumbers = (len, start, end) => {
-    let arr = new Array(len).fill(len);
-    return arr.map(el => el = (Math.random() * (end - start) + start))
+    let arr = new Array(len).fill();
+    if (start > end) {
+        return null
+    }
+    const getMathCeil = end - start < 1 && Math.ceil(end) === Math.ceil(start);
+    if (getMathCeil) {
+        return null;
+    }
+    const getRandomNum = arr.map(el => Math.random(el) * (end - start) + start);
+    const getMathTrunc = getRandomNum.map(el => Math.trunc(el));
+
+    return getMathTrunc;
 }
 
-const result = getRandomNumbers(4, 6, 9);
+const result = getRandomNumbers(2, 8, 12);
 
 // console.log(result)
