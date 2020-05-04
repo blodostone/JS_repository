@@ -2,12 +2,12 @@ const arr = [2, 16, -45, 54, -99];
 
 const getMaxAbsoluteNumber = arr => {
     let max = -Infinity;
-    let sum = [];
+    let now = new Array();
 
     arr.forEach(num => {
         if (Math.abs(num) > max) {
             max = Math.abs(num);
-        } else if (Math.abs(num) == sum) {
+        } else if (max === now) {
             return null;
         }
     })
@@ -24,4 +24,4 @@ const getMaxAbsoluteNumber = arr => {
 //     return max;
 // }
 
-// console.log(getMaxAbsoluteNumber(arr));
+console.log(getMaxAbsoluteNumber(arr));
