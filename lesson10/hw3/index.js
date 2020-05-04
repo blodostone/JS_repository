@@ -1,8 +1,8 @@
-const superRound = (num, sum) => [
-    Math.floor(Math.pow(num, sum) * 100) / 100,
-    Math.round(Math.pow(num, sum) * 100) / 100,
-    Math.ceil(Math.pow(num, sum) * 100) / 100,
-    Math.trunc(Math.pow(num, sum) * 100) / 100, +num.toFixed(sum),
+const superRound = (num) => [
+    Math.floor(num) * (Math.pow(10, 2)) / 100,
+    Math.round(num) * (Math.pow(10, 2)) / 100,
+    Math.ceil(num) * (Math.pow(10, 2)) / 100,
+    Math.trunc(num) * (Math.pow(10, 2)) / 100, +num.toFixed(2),
 ]
 const result = superRound(-Math.PI, 2);
 
