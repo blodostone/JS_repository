@@ -16,4 +16,4 @@ const getMaxAbsoluteNumber = arr => {
     return max;
 }
 
-console.log(getMaxAbsoluteNumber(arr));
+// console.log(getMaxAbsoluteNumber(arr));
