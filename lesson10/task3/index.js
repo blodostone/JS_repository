@@ -7,7 +7,7 @@ const multiRound = num => [
 
 const result = multiRound(-Math.PI);
 
-console.log(multiRound(-Math.PI));
+// console.log(result);
 
 
 // const multiRound = (num, sum) => [
