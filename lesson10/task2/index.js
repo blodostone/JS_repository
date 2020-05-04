@@ -21,18 +21,16 @@ function getParsedFloatsV2(nan) {
 // console.log(compareParseFloat);
 
 function getParsedIntegers(arr) {
-    const ParsedIntegersArr = arr
-        .map(el => Number.parselnt(el));
-    return ParsedIntegersArr;
-};
-
-// console.log(getParsedIntegers(arr));
+    const parsedIntegersArr = arr.map(item => Number.parseInt(item));
+    return parsedIntegersArr;
+}
 
 function getParsedIntegersV2(arr) {
-    const ParsedIntegersArrV2 = arr
-        .map(el => parselnt(el));
-    return ParsedIntegersArrV2;
-};
+    const parsedIntegersArrV2 = arr.map(item => parseInt(item));
+    return parsedIntegersArrV2;
+}
+
+
 
 // console.log(getParsedIntegersV2(arr));
 
