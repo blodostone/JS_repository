@@ -20,7 +20,7 @@ function getParsedFloatsV2(nan) {
 // const compareParseFloat = result2 === result3;
 // console.log(compareParseFloat);
 
-const getParsedIntegers = arr => {
+function getParsedIntegers(arr) {
     const ParsedIntegersArr = arr
         .map(el => Number.parselnt(el));
     return ParsedIntegersArr;
@@ -28,7 +28,7 @@ const getParsedIntegers = arr => {
 
 // console.log(getParsedIntegers(arr));
 
-const getParsedIntegersV2 = arr => {
+function getParsedIntegersV2(arr) {
     const ParsedIntegersArrV2 = arr
         .map(el => parselnt(el));
     return ParsedIntegersArrV2;
