@@ -1,12 +1,13 @@
-const multiRound = (num) => [
+const multiRound = num => [
     Math.round(num * 100) / 100,
     Math.floor(num * 100) / 100,
     Math.ceil(num * 100) / 100,
-    Math.trunc(num * 100) / 100,
-    Number(num.toFixed(2)),
+    Math.trunc(num * 100) / 100, +num.toFixed(2),
 ];
 
-// console.log(multiRound(-Math.PI), multiRound(Math.PI));
+const result = multiRound(-Math.PI);
+
+console.log(multiRound(-Math.PI));
 
 
 // const multiRound = (num, sum) => [
