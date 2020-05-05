@@ -1,4 +1,4 @@
-const splitText = (text, len) => {
+const splitText = (text, len = 10) => {
     const strArr = [];
     let startPositon = 0;
     if (typeof text !== 'string') {
@@ -19,5 +19,5 @@ const splitText = (text, len) => {
 
 const result = splitText('abcdefg', 4);
 
-// console.log(result);
+console.log(result);
 //'abcdefg'
