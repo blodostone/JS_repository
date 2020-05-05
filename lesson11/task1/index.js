@@ -19,5 +19,5 @@ const splitText = (text, len) => {
 
 const result = splitText('abcdefg', 4);
 
-console.log(result);
+// console.log(result);
 //'abcdefg'
