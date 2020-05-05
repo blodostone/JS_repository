@@ -1,58 +1,23 @@
-// const splitText = (text, len) => {
-//     const strArr = [];
-//     let startPositon = 0;
-
-//     if (typeof str !== 'string') {
-//         return null;
-//     }
-
-//     while (true) {
-//         let chunk = text.substr(startPositon, len);
-//         if (chunk.length === 0) {
-//             break;
-//         }
-//         if (chunk.length < len) {
-//             chunk = chunk.concat('.'.repeat(len - chunk.length));
-//         }
-//         strArr.push(chunk);
-//         start += len;
-//     }
-
-//     return strArr.join('\n');
-//     // return strArr;
-// }
-
-// const result = splitText('abcdefg', 4);
-
-// console.log(result);
-//'abcdefg'
-
-
-
-
-const splitString = (text, len = 10) => {
-
+const splitText = (text, len) => {
     const strArr = [];
     let startPositon = 0;
+    if (typeof text !== 'string') {
+        return null;
+    }
 
     while (true) {
         let chunk = text.substr(startPositon, len);
         if (chunk.length === 0) {
             break;
         }
-        if (chunk.length < len) {
-            chunk = chunk.concat('.'.repeat(len - chunk.length));
-        }
-        strArr.push(chunk);
+        strArr.push(chunk[0].toUpperCase() + chunk.slice(1));
         startPositon += len;
     }
 
-    if (typeof str !== 'string') {
-        return null;
-    }
+    return strArr.join('\n');
+}
 
-    return result;
-};
-const result = splitString('something in the text', 6);
+const result = splitText('abcdefg', 4);
 
-// console.log(result)
+console.log(result);
+//'abcdefg'
