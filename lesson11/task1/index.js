@@ -30,7 +30,7 @@
 
 
 
-const splitText = (text, len = 10) => {
+const splitString = (text, len = 10) => {
 
     const strArr = [];
     let startPositon = 0;
@@ -53,6 +53,6 @@ const splitText = (text, len = 10) => {
 
     return result;
 };
-const result = splitText('abcdefg', 4)
+const result = splitString('something in the text', 6);
 
 // console.log(result)
