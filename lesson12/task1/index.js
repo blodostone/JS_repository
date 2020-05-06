@@ -7,7 +7,7 @@ const calc = exp => {
             result = Number(a) + +b;
             break;
         case '-':
-            result = a - +b;
+            result = Number(a) - +b;
         case '*':
             result = a * b;
             break;
