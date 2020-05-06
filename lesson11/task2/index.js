@@ -28,12 +28,12 @@ const sortContacts = (contacts, ifContacts = true) => {
     // } 
     const user = contacts
         .sort((a, b) => {
-            return a.name.localeCompare(b.name);
+            return b.name.localeCompare(a.name);
         });
     if (ifContacts == false) {
         user = contacts
             .sort((a, b) => {
-                return b.name.localeCompare(a.name);
+                return a.name.localeCompare(b.name);
             });
     }
     return user;
