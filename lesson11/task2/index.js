@@ -1,14 +1,14 @@
 const contacts = [{
         name: 'Staso',
-        phoneNumber: '32423-324-423',
+        phoneNumber: '1111-111-11',
     },
     {
         name: 'Peter',
-        phoneNumber: '13343-324-426',
+        phoneNumber: '2222-222-22',
     },
     {
         name: 'Nick',
-        phoneNumber: '54356-324-428',
+        phoneNumber: '3333-333-33',
     },
 ];
 
@@ -42,6 +42,6 @@ const sortContacts = (contacts, ifContacts = true) => {
 
 }
 
-const result = sortContacts(contacts, ifContacts);
+const result = sortContacts(contacts, true);
 
 console.log(result)
