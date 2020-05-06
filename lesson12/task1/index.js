@@ -4,7 +4,7 @@ const calc = exp => {
 
     switch (operator) {
         case '+':
-            result = Number(a) + b;
+            result = Number(a) + +b;
             break;
         case '-':
             result = a - b;
