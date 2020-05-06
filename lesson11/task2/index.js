@@ -26,11 +26,11 @@ const sortContacts = (contacts, ifContacts = true) => {
     //         break;
     //     }
     // } 
-    const user = contacts
+    let user = contacts
         .sort((a, b) => {
             return a.name.localeCompare(b.name);
         });
-    if (ifContacts === false) {
+    if (ifContacts == false) {
         user = contacts
             .sort((a, b) => {
                 return b.name.localeCompare(a.name);
@@ -42,6 +42,6 @@ const sortContacts = (contacts, ifContacts = true) => {
 
 }
 
-const result = sortContacts(contacts, false);
+const result = sortContacts(contacts, ifContacts);
 
 console.log(result)
