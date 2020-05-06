@@ -2,7 +2,7 @@
 //установить лимит на знаки после запятой(2)
 // к каждому числу добавить знак $
 
-const cleanTransactionList = (money) => {
+const cleanTransactionsList = (money) => {
     // let arr = new Array();
     // const maping = money.map(sum => sum);
     const cleaningTransaction = money.filter(el => isFinite(el));
@@ -11,7 +11,7 @@ const cleanTransactionList = (money) => {
     return mapingTransaction;
 }
 
-const result = cleanTransactionList(['1.9', '16.4', '17', '1 dollar']);
+const result = cleanTransactionsList(['1.9', '16.4', '17', '1 dollar']);
 
 // console.log(result);
 
