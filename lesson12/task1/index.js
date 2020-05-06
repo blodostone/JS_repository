@@ -3,20 +3,19 @@ const calc = exp => {
     let result;
 
     switch (operator) {
-        case '+':
-            result = Number(a) + +b;
-            break;
-        case '-':
-            result = Number(a) - +b;
         case '*':
             result = a * b;
             break;
         case '/':
             result = a / b;
             break;
-
+        case '+':
+            result = Number(a) + +b;
+            break;
+        case '-':
+            result = a - b;
     }
     return `${exp} = ${result}`;
 };
 
-console.log(calc('1 + 2'));
+console.log(calc('6 * 4'));
