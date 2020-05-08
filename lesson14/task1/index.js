@@ -1,21 +1,20 @@
-'user strict';
-
 let message = 'Just learn it';
 
 export function sendMessage(name) {
-    const sender = 'GromCode';
+    let sender = 'GromCode';
 
     console.log(`${name}, ${message}! Your ${sender}`);
 }
 
-export function setMessage(text) {
-    message = text;
+export function setMessage(newMessage) {
+    message = newMessage;
 }
 
 
+// let message = 'Just learn it';
 
 // function sendMessage(name) {
-//     const sender = 'GromCode';
+//      sender = 'GromCode';
 
 //     console.log(`${name}, ${message}! Your ${sender}`);
 // }
@@ -23,7 +22,6 @@ export function setMessage(text) {
 // function setMessage(text) {
 //     message = text;
 // }
-
 // sendMessage('Ann');
 
 // setMessage('Good job');
