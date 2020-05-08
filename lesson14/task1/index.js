@@ -3,11 +3,11 @@ let message = 'Just learn it';
 export function sendMessage(name) {
     let sender = 'GromCode';
 
-    console.log(`${name}, ${message}! Your ${sender}`);
+    console.log(`${name}, ${message} Your ${sender}`);
 }
 
 export function setMessage(newMessage) {
-    message = newMessage;
+    message = newMessage + '!';
 }
 
 
