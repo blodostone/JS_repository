@@ -1,5 +1,3 @@
-'user strict';
-
 let message = 'Just learn it';
 
 export function sendMessage(name) {
