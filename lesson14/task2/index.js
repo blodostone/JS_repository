@@ -2,19 +2,18 @@ let message = 'Just learn it';
 
 const createMessenger = () => {
 
-    function sendMessage(name) {
+    export default function sendMessage(name) {
         const sender = 'GromCode';
 
-        console.log(`${name}, ${message} Your ${sender}`);
+        console.log(`${name}, ${message}! Your ${sender}`);
     }
 
-    function setMessage(text) {
-        message = text + '!';
+    export default function setMessage(text) {
+        message = text.bold();
     }
 
-    function setSender(string, bold) {
+    export default function setSender(string) {
         message = string;
-        sender = bold;
     }
 
     return {
@@ -30,7 +29,7 @@ const createMessenger = () => {
 
 // const messanger2 = createMessenger();
 
-// messanger2.setMessage('Good job'.bold());
+// messanger2.setMessage('Good job');
 // messanger1.sendMessage('Bob');
 
 // const messanger3 = createMessenger();
@@ -38,4 +37,4 @@ const createMessenger = () => {
 // messanger3.setSender('Just learn it');
 // messanger1.sendMessage('Bob');
 
-// export default createMessenger;
+export default createMessenger;
