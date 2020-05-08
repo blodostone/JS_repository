@@ -5,11 +5,11 @@ const createMessenger = () => {
     function sendMessage(name) {
         const sender = 'GromCode';
 
-        console.log(`${name}, ${message}! Your ${sender}`);
+        console.log(`${name}, ${message} Your ${sender}`);
     }
 
     function setMessage(text) {
-        message = text;
+        message = text + '!';
     }
 
     function setSender(string, bold) {
