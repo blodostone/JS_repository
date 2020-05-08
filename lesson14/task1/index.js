@@ -11,6 +11,7 @@ export function setMessage(newMessage) {
 }
 
 
+
 // let message = 'Just learn it';
 
 // function sendMessage(name) {
@@ -22,7 +23,7 @@ export function setMessage(newMessage) {
 // function setMessage(text) {
 //     message = text;
 // }
-// sendMessage('Ann');
+sendMessage('Ann');
 
 // setMessage('Good job');
 
