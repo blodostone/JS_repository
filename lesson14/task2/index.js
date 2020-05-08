@@ -11,15 +11,12 @@ export default function createMessenger() {
 
     function setMessage(text) {
         message = text.bold();
-        const sender = 'GromCode'.bold();
 
-        console.log(`${name}, ${message}! Your ${sender}`);
     }
 
     function setSender(string) {
         message = string;
 
-        console.log(`${name}, ${message}! Your ${sender}`);
     }
 
     return {
