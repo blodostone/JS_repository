@@ -23,9 +23,9 @@ export default function createMessenger() {
     };
 };
 
-// const messanger1 = createMessenger();
+const messanger1 = createMessenger();
 
-// messanger1.sendMessage('Bob');
+messanger1.sendMessage('Bob');
 
 // const messanger2 = createMessenger();
 
