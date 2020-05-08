@@ -3,8 +3,7 @@ let message = 'Just learn it';
 export default function createMessenger() {
 
     function sendMessage(name) {
-        const sender = 'GromCode';
-        const name = 'Bob';
+        let sender = 'GromCode';
 
         console.log(`${name}, ${message}! Your ${sender}`);
     }
