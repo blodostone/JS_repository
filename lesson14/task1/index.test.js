@@ -9,5 +9,5 @@ it('should get argument name', () => {
 it('should get argument name', () => {
     const result = setMessage(text);
 
-    expect(result).toEqual('Ann, Good job! Your GromCode');
+    expect(result).toEqual('Good job');
 });
