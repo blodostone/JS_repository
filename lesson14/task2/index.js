@@ -32,7 +32,7 @@ const messenger1 = createMessenger();
 
 messenger1.sendMessage('Bob');
 
-let str = 'Good job';
+let str = 'Hello!';
 let bold1 = str.bold();
 
 const messenger2 = createMessenger();
