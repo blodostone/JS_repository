@@ -6,9 +6,8 @@ export default function createMessenger() {
 
     function sendMessage(name) {
         let sender = 'GromCode';
-        let name = 'Bob';
 
-        console.log(`${name}, ${message}! Your ${sender}`);
+        console.log(`${'Bob'}, ${message}! Your ${sender}`);
     }
 
     function setMessage(text) {
