@@ -56,14 +56,14 @@ const messanger1 = createMessenger();
 
 messanger1.sendMessage('Bob');
 
-// const messanger2 = createMessenger();
+const messanger2 = createMessenger();
 
-// messanger2.setMessage('Good job');
+messanger2.setMessage('Good job');
 // messanger1.sendMessage('Bob');
 
-// const messanger3 = createMessenger();
+const messanger3 = createMessenger();
 
-// messanger3.setSender('Just learn it');
+messanger3.setSender('Just learn it');
 // messanger1.sendMessage('Bob');
 
 // export default createMessenger;
