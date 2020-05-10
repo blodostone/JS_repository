@@ -4,36 +4,7 @@ let bold1 = str.bold();
 let str2 = 'GromCode';
 let bold2 = str2.bold();
 
-// export default function createMessenger() {
-//     let sender = 'GromCode';
-//     let message = 'Just learn it';
-
-//     function sendMessage(name) {
-
-
-//         console.log(`${name}, ${message}! Your ${sender}`);
-//     }
-
-//     function setMessage(text) {
-//         message = text;
-
-//     }
-
-//     function setSender(string) {
-//         sender = string;
-//     }
-
-
-
-//     return {
-//         sendMessage,
-//         setMessage,
-//         setSender,
-//     };
-// };
-
-
-function createMessenger() {
+export default function createMessenger() {
     let sender = 'GromCode';
     let message = 'Just learn it';
 
@@ -50,7 +21,6 @@ function createMessenger() {
 
     function setSender(string) {
         sender = string;
-
     }
 
 
@@ -61,6 +31,36 @@ function createMessenger() {
         setSender,
     };
 };
+
+
+// function createMessenger() {
+//     let sender = 'GromCode';
+//     let message = 'Just learn it';
+
+//     function sendMessage(name) {
+
+
+//         console.log(`${name}, ${message}! Your ${sender}`);
+//     }
+
+//     function setMessage(text) {
+//         message = text;
+
+//     }
+
+//     function setSender(string) {
+//         sender = string;
+
+//     }
+
+
+
+//     return {
+//         sendMessage,
+//         setMessage,
+//         setSender,
+//     };
+// };
 
 // const messanger1 = createMessenger();
 
