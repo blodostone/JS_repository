@@ -6,6 +6,7 @@ export default function createMessenger() {
 
     function sendMessage(name) {
         let sender = 'GromCode';
+        let name = 'Bob';
 
         console.log(`${name}, ${message}! Your ${sender}`);
     }
@@ -15,9 +16,9 @@ export default function createMessenger() {
 
     }
 
-    function setSender(string, sender1) {
+    function setSender(string, sender) {
         message = string;
-        sender = sender1.bold();
+        sender = sender.bold();
     }
 
 
@@ -34,6 +35,7 @@ export default function createMessenger() {
 
 //     function sendMessage(name) {
 //         let sender = 'GromCode';
+//         let name = 'Bob';
 
 //         console.log(`${name}, ${message}! Your ${sender}`);
 //     }
