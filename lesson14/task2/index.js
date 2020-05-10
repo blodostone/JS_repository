@@ -1,13 +1,11 @@
 let message = 'Just learn it';
 
-let sender1 = 'GromCode';
-
 export default function createMessenger() {
 
     function sendMessage(name) {
         let sender = 'GromCode';
 
-        console.log(`${'Bob'}, ${message}! Your ${sender}`);
+        console.log(`${name}, ${message}! Your ${sender}`);
     }
 
     function setMessage(text) {
@@ -15,9 +13,8 @@ export default function createMessenger() {
 
     }
 
-    function setSender(string, sender) {
+    function setSender(string) {
         message = string;
-        sender = sender.bold();
     }
 
 
@@ -55,9 +52,9 @@ export default function createMessenger() {
 //     };
 // };
 
-// const messanger1 = createMessenger();
+const messanger1 = createMessenger();
 
-// messanger1.sendMessage('Bob');
+messanger1.sendMessage('Bob');
 
 // const messanger2 = createMessenger();
 
