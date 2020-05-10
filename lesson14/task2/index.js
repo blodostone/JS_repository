@@ -62,19 +62,19 @@ function createMessenger() {
     };
 };
 
-const messanger1 = createMessenger();
+// const messanger1 = createMessenger();
 
-messanger1.sendMessage('Bob');
-
-const messanger2 = createMessenger();
-
-messanger2.setMessage(bold1);
 // messanger1.sendMessage('Bob');
 
-const messanger3 = createMessenger();
+// const messanger2 = createMessenger();
 
-messanger3.setSender('Just learn it');
-messanger3.setSender(bold2);
+// messanger2.setMessage(bold1);
+// messanger1.sendMessage('Bob');
+
+// const messanger3 = createMessenger();
+
+// messanger3.setSender('Just learn it');
+// messanger3.setSender(bold2);
 // messanger1.sendMessage('Bob');
 
 // export default createMessenger;
