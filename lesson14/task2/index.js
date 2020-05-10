@@ -28,23 +28,23 @@ const createMessenger = () => {
 
 export default createMessenger;
 
-const messanger1 = createMessenger();
+const messenger1 = createMessenger();
 
-messanger1.sendMessage('Bob');
+messenger1.sendMessage('Bob');
 
 let str = 'Good job';
 let bold1 = str.bold();
 
-const messanger2 = createMessenger();
+const messenger2 = createMessenger();
 
-messanger2.setMessage(bold1);
+messenger2.setMessage(bold1);
 
 let str2 = 'GromCode';
 let bold2 = str2.bold();
 
-const messanger3 = createMessenger();
+const messenger3 = createMessenger();
 
-messanger3.setSender(bold2);
+messenger3.setSender(bold2);
 
 
 // function createMessenger() {
@@ -78,3 +78,5 @@ messanger3.setSender(bold2);
 
 
 // export default createMessenger;
+
+messenger1.sendMessage('Bob');
