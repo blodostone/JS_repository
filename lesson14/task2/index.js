@@ -1,9 +1,3 @@
-let str = 'Good job';
-let bold1 = str.bold();
-
-let str2 = 'GromCode';
-let bold2 = str2.bold();
-
 export default function createMessenger() {
     let sender = 'GromCode';
     let message = 'Just learn it';
@@ -31,6 +25,12 @@ export default function createMessenger() {
         setSender,
     };
 };
+
+let str = 'Good job';
+let bold1 = str.bold();
+
+let str2 = 'GromCode';
+let bold2 = str2.bold();
 
 
 // function createMessenger() {
