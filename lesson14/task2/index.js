@@ -30,7 +30,7 @@ export default createMessenger;
 
 const messenger1 = createMessenger();
 
-messenger1.sendMessage('Bob');
+// messenger1.sendMessage('Bob');
 
 let str = 'Hello!';
 let bold1 = str.bold();
@@ -46,4 +46,4 @@ const messenger3 = createMessenger();
 
 messenger3.setSender(bold2);
 
-messenger1.sendMessage('Bob');
+// messenger1.sendMessage('Bob');
