@@ -1,4 +1,4 @@
-export default function createMessenger() {
+const createMessenger = () => {
     let sender = 'GromCode';
     let message = 'Just learn it';
 
@@ -26,11 +26,25 @@ export default function createMessenger() {
     };
 };
 
+export default createMessenger;
+
+const messanger1 = createMessenger();
+
+messanger1.sendMessage('Bob');
+
 let str = 'Good job';
 let bold1 = str.bold();
 
+const messanger2 = createMessenger();
+
+messanger2.setMessage(bold1);
+
 let str2 = 'GromCode';
 let bold2 = str2.bold();
+
+const messanger3 = createMessenger();
+
+messanger3.setSender(bold2);
 
 
 // function createMessenger() {
@@ -62,19 +76,5 @@ let bold2 = str2.bold();
 //     };
 // };
 
-const messanger1 = createMessenger();
-
-messanger1.sendMessage('Bob');
-
-const messanger2 = createMessenger();
-
-messanger2.setMessage(bold1);
-messanger1.sendMessage('Bob');
-
-const messanger3 = createMessenger();
-
-messanger3.setSender('Just learn it');
-messanger3.setSender(bold2);
-messanger1.sendMessage('Bob');
 
 // export default createMessenger;
