@@ -1,9 +1,10 @@
-let message = 'Just learn it';
-
 export default function createMessenger() {
+    let message = 'Just learn it';
+    let userName = 'Bob';
 
     function sendMessage(name) {
         let sender = 'GromCode';
+        name = userName;
 
         console.log(`${name}, ${message}! Your ${sender}`);
     }
