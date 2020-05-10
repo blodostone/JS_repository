@@ -14,7 +14,7 @@ export default function createMessenger() {
     }
 
     function setSender(string) {
-        sender = string;
+        sender = string.bold();
     }
 
 
