@@ -46,37 +46,4 @@ const messenger3 = createMessenger();
 
 messenger3.setSender(bold2);
 
-
-// function createMessenger() {
-//     let sender = 'GromCode';
-//     let message = 'Just learn it';
-
-//     function sendMessage(name) {
-
-
-//         console.log(`${name}, ${message}! Your ${sender}`);
-//     }
-
-//     function setMessage(text) {
-//         message = text;
-
-//     }
-
-//     function setSender(string) {
-//         sender = string;
-
-//     }
-
-
-
-//     return {
-//         sendMessage,
-//         setMessage,
-//         setSender,
-//     };
-// };
-
-
-// export default createMessenger;
-
 messenger1.sendMessage('Bob');
