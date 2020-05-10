@@ -9,12 +9,12 @@ export default function createMessenger() {
     }
 
     function setMessage(text) {
-        message = text.bold();
+        message = text;
 
     }
 
     function setSender(string) {
-        sender = string.bold();
+        sender = string;
     }
 
 
