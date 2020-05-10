@@ -59,11 +59,11 @@ messanger1.sendMessage('Bob');
 const messanger2 = createMessenger();
 
 messanger2.setMessage('Good job');
-// messanger1.sendMessage('Bob');
+messanger1.sendMessage('Bob');
 
 const messanger3 = createMessenger();
 
 messanger3.setSender('Just learn it');
-// messanger1.sendMessage('Bob');
+messanger1.sendMessage('Bob');
 
 // export default createMessenger;
