@@ -6,6 +6,8 @@ const makeCounter = () => {
     }
 };
 
+export default makeCounter;
+
 const counter1 = makeCounter();
 const counter2 = makeCounter();
 
