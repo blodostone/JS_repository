@@ -1,6 +1,6 @@
 var foo = 1;
 
-function bar() {
+export function bar() {
     if (!foo) {
         let foo = 10;
     }
@@ -9,3 +9,5 @@ function bar() {
 }
 
 var foo = bar();
+
+// console.log(foo);
