@@ -1,7 +1,8 @@
 export function createArrayOfFunctions(num) {
     let arr = [];
+    let emptyArray = new Array();
     if (arr === undefined) {
-        return [];
+        return emptyArray;
     }
     if (!Number(num)) {
         return null;
