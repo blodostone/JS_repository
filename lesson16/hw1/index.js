@@ -1,6 +1,9 @@
-export function createArrayOfFunctions(num) {
+function createArrayOfFunctions(num) {
     let arr = [];
-    if (typeof Number !== num) {
+    if (arr === undefined) {
+        return null;
+    }
+    if (typeof Number !== Number(num)) {
         return null;
     }
     for (let g = 0; g < num; g++) {
@@ -12,5 +15,5 @@ export function createArrayOfFunctions(num) {
 
 }
 
-const result = createArrayOfFunctions();
+const result = createArrayOfFunctions(7);
 console.log(result);
