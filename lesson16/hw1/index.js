@@ -1,13 +1,14 @@
 export function createArrayOfFunctions(num) {
+    let arr = [];
     if (typeof Number !== num) {
         return null;
     }
     for (let g = 0; g < num; g++) {
-        num.push(function() {
+        arr.push(function() {
             return g;
         })
     }
-    return num;
+    return arr;
 
 }
 
