@@ -1,4 +1,4 @@
-export function createArrayOfFunction(num) {
+export function createArrayOfFunctions(num) {
     if (!Number(num)) {
         return null;
     }
@@ -11,5 +11,5 @@ export function createArrayOfFunction(num) {
 
 }
 
-const result = createArrayOfFunction();
+const result = createArrayOfFunctions();
 console.log(result);
