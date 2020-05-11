@@ -1,4 +1,4 @@
-function createCalculator() {
+export default function createCalculator() {
 
     let memory = 0;
 
