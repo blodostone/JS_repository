@@ -1,4 +1,4 @@
-const makeCounter = () => {
+export function makeCounter() {
     let count = 0;
 
     return function() {
@@ -6,10 +6,9 @@ const makeCounter = () => {
     }
 };
 
-export default makeCounter;
 
-const counter1 = makeCounter();
-const counter2 = makeCounter();
+// const counter1 = makeCounter();
+// const counter2 = makeCounter();
 
 // console.log(counter1());
 // console.log(counter1());
