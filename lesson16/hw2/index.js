@@ -1,4 +1,4 @@
-var foo = 1;
+export var foo = 1;
 
 export function bar() {
     if (!foo) {
