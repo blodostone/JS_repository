@@ -3,13 +3,13 @@ export function createArrayOfFunctions(num) {
     if (arr === undefined) {
         return [];
     }
-    if (typeof Number !== Number(num)) {
+    if (!Number(num)) {
         return null;
     }
     for (let g = 0; g < num; g++) {
-        arr.push(function() {
+        arr[g] = (function() {
             return g;
-        })
+        });
     }
     return arr;
 
