@@ -1,5 +1,5 @@
 export function createArrayOfFunctions(num) {
-    if (!Number(num)) {
+    if (typeof Number !== num) {
         return null;
     }
     for (let g = 0; g < num; g++) {
