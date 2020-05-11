@@ -3,9 +3,9 @@ function createArrayOfFunctions(num) {
     if (arr === undefined) {
         return null;
     }
-    if (typeof Number !== Number(num)) {
-        return null;
-    }
+    // if (typeof Number !== Number(num)) {
+    //     return null;
+    // }
     for (let g = 0; g < num; g++) {
         arr.push(function() {
             return g;
