@@ -15,5 +15,5 @@ function createArrayOfFunctions(num) {
 
 }
 
-const result = createArrayOfFunctions(7);
-console.log(result);
+// const result = createArrayOfFunctions(7);
+// console.log(result);
