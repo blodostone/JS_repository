@@ -1,8 +1,8 @@
 function createArrayOfFunctions(num) {
     let arr = [];
-    if (arr === undefined) {
-        return null;
-    }
+    // if (arr === undefined) {
+    //     return null;
+    // }
     // if (typeof Number !== Number(num)) {
     //     return null;
     // }
