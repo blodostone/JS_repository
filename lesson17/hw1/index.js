@@ -3,7 +3,7 @@ const student = {
     name: 'Tom',
 };
 
-export function sayName() {
+function sayName() {
     console.log(this.name);
 }
 
@@ -58,15 +58,9 @@ function getPopulation(population) {
 // результат работы ф-ции getPopulation присвойте в переменную и выведите в консоль
 // ... your code here
 
-// const func = country.getPopulation.bind({ countryName: 'Ukraine' });
+const func = getPopulation.call(country, 43000);
 
-// const func = country.getPopulation;
-
-// func({ countryName: 'Ukraine' })
-
-// const newObject = func.call(43000);
-
-// // console.log(newObject);
+console.log(func);
 
 
 
@@ -93,6 +87,6 @@ const anotherTransaction = {
 // используйте объект anotherTransaction как контекст
 // ... your code here
 
-const funcLast = transaction.printTransaction(amount);
+const funcLast = transaction.printTransaction.call(anotherTransaction);
 
 console.log(funcLast);
