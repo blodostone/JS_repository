@@ -3,7 +3,7 @@ const student = {
     name: 'Tom',
 };
 
-function sayName() {
+export function sayName() {
     console.log(this.name);
 }
 
