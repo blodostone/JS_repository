@@ -5,8 +5,8 @@ export const callbackPrompt = {
         console.log(phoneNumber);
     },
     showDeferredPrompt(ms) {
-        setTimeout(() => this.showPrompt.bind(this), 1000)
+        setTimeout(this.showPrompt, ms)
     }
 }
 
-callbackPrompt.showPrompt();
+callbackPrompt.showDeferredPrompt(1000);
