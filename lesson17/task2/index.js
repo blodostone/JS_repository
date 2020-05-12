@@ -3,6 +3,11 @@ export const callbackPrompt = {
     showPrompt() {
         const phoneNumber = prompt(this.message);
         console.log(phoneNumber);
+    },
+    showDeferredPrompt(ms) {
+        setTimeout(() => {
+            console.log(phoneNumber);
+        }, 1000)
     }
 }
 
