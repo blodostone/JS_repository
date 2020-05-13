@@ -2,7 +2,7 @@
      firstName: 'John',
      lastName: 'Doe',
      getFullName(firstName, lastName) {
-         return (`${firstName} ${lastName}`);
+         return (`${this.firstName} ${this.lastName}`);
      },
      setFullName(name) {
          this.firstName = name.split()
