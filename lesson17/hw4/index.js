@@ -10,3 +10,5 @@
      }
 
  }
+
+ user.getFullName('John Doe');
