@@ -5,8 +5,8 @@
          return (`${this.firstName} ${this.lastName}`);
      },
      setFullName(name) {
-         this.firstName = name.split()[0];
-         this.lastName = name.split()[1];
+         this.firstName = name.split(' ')[0];
+         this.lastName = name.split(' ')[1];
      }
 
  };
