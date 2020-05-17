@@ -1,6 +1,6 @@
 'use strict';
 
-const event = {
+export const event = {
     guests: [
         { name: 'John', age: 18, email: 'example@sever.com' },
     ],
@@ -15,4 +15,4 @@ const event = {
     }
 }
 
-console.log(event.getInvitations());
+// console.log(event.getInvitations());
