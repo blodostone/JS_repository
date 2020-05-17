@@ -1,6 +1,6 @@
 export const sumOfSquares = sum => {
     return [...sum].reduce((acc, elem) => {
-        return acc + elem;
+        return acc * elem;
     }, 0);
 }
 
