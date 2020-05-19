@@ -1,4 +1,4 @@
-export class User {
+class User {
     createUser(name, age) {
         this.name = name;
         this.age = age;
