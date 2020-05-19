@@ -30,3 +30,5 @@ export class User {
 const user1 = new User('John', 17);
 const user2 = new User('Bob', 20);
 const user3 = new User('Donald', -20);
+
+user2.setAge(20);
