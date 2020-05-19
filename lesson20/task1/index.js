@@ -1,5 +1,5 @@
 class User {
-    createUser(name, age) {
+    constructor(name, age) {
         this.name = name;
         this.age = age;
     }
@@ -32,3 +32,4 @@ const user2 = new User('Bob', 20);
 const user3 = new User('Donald', -20);
 
 user2.setAge(20);
+User.createEmpty();
