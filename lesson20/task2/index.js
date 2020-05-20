@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 export class Vehicle {
     constructor(name, ofWheels) {
@@ -11,20 +11,22 @@ export class Vehicle {
         console.log(`${this.name} stopped`);
     }
 }
+
 export class Ship extends Vehicle {
     constructor(name, speed) {
         max(name, false);
         this.speed = speed;
     }
     move() {
-        console.log(`${this.name} lifting anchor up`)
+        console.log(`${this.name} lifting anchor up`);
         max.move();
     }
+
     stop() {
-        console.log(`${this.name} lifting anchor down`)
+        console.log(`${this.name} lifting anchor down`);
         max.stop();
     }
-};
+}
 
-const ship1 = new Ship('Argo', 20);
+const ship1 = new Ship("Argo", 20);
 ship1.stop();
