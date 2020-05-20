@@ -1,3 +1,5 @@
+'use strict';
+
 export class Vehicle {
     constructor(name, ofWheels) {
         (this.ofWheels = ofWheels), (this.name = name);
@@ -25,3 +27,4 @@ export class Ship extends Vehicle {
 };
 
 const ship1 = new Ship('Argo', 20);
+ship1.stop();
