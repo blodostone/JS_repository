@@ -1,8 +1,10 @@
 export function createButton(buttonText) {
-    const elem = document.createElement('body');
-    const createElem = elem.append = "<button>" + buttonText + "</button>";
-    const contentElem = createElem.textContent;
-    return contentElem
+    const elem = document.querySelector('body');
+    const createElem = document.createElement('button');
+    // const contentElem = createElem.textContent;
+    createElem.textContent = buttonText;
+    elem.append(createElem);
+    // return contentElem
 }
 const buttonText = 'Button Text';
 // createButton(buttonText);
