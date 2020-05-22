@@ -14,7 +14,7 @@ export function getDescription() {
 
 export function getPlans() {
     const createPlans = document.querySelector('.plans');
-    const innerPlans = createPlans.innerText;
+    const innerPlans = createPlans.innerHTML;
     return innerPlans;
 }
 // getPlans();
