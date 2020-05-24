@@ -14,4 +14,4 @@ export function finishList() {
     liElem.textContent = 8;
     listElem.append(liElem);
 }
-finishList();
+// finishList();
