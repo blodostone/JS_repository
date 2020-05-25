@@ -28,4 +28,4 @@ const renderListItem = (listItems) => {
         });
     listElem.append(...listElemItems);
 };
-//   renderListItem(tasks);
+renderListItem(tasks);
