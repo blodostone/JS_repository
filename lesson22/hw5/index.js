@@ -1,15 +1,7 @@
-const elem = document.querySelector('.single-use-btn');
+const btnElem = document.querySelector('.single-use-btn');
 
-elem.innerHTML = 'clicked';
-
-const handler = () => {
+function handleClick() {
     console.log('clicked');
+    btnElem.removeEventListener('click', handleClick);
 }
-
-elem.addEventListener('click', handler);
-elem.removeEventListener('click', handler);
-
-
-// elem.addEventListener('click', () => {
-//     console.log(elem.innerHTML);
-// });
+btnElem.addEventListener('click', handleClick);
