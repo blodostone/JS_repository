@@ -12,7 +12,3 @@ elem.innerHTML = 'clicked';
 elem.addEventListener('click', () => {
     console.log(elem.innerHTML);
 });
-
-const removeElem = elem.innerHTML.bind('clicked');
-
-elem.addEventListener('click', removeElem);
