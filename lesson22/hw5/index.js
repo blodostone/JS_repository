@@ -11,4 +11,7 @@ elem.innerHTML = 'clicked';
 
 elem.addEventListener('click', () => {
     console.log(elem.innerHTML);
-})
+});
+elem.removeEventListener('click', () => {
+    console.log(elem.innerHTML);
+});
