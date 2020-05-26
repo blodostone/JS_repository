@@ -7,7 +7,7 @@ const elem = document.querySelector('.single-use-btn');
 // elem.addEventListener('click', handler);
 // elem.removeEventListener('click', handler);
 
-elem.innerHTML = 'clicked';
+elem.innerHTML += 'clicked';
 
 elem.addEventListener('click', () => {
     console.log(elem.innerHTML);
