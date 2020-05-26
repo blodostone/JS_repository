@@ -1,4 +1,4 @@
-const elem = document.querySelector('.btn');
+const elem = document.querySelectorAll('.btn');
 
 function handleClick(event) {
     console.log(event.target.textContent);
