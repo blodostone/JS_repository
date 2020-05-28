@@ -18,6 +18,7 @@ const logTarget = (text, color) => {
 //     elem.addEventListener('click', () => logTarget('DIV', 'grey'));
 //}
 
+//build
 
 const logGreenDiv = logTarget.bind(null, "DIV", 'green');
 const logGreenP = logTarget.bind(null, "P", 'green');
@@ -40,7 +41,7 @@ spanElem.addEventListener('click', logGreySpan, true);
 spanElem.addEventListener('click', logGreySpan);
 
 
-
+//clear
 
 const listElem = document.querySelector('.events-list');
 
@@ -50,6 +51,9 @@ const clearNullEvents = () => {
 
 const btnElem = document.querySelector('.clear-btn');
 btnElem.addEventListener('click', clearNullEvents);
+
+
+//turn
 
 
 function turnOffElement() {
