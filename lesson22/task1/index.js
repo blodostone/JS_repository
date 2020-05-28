@@ -62,10 +62,10 @@ function turnOffElement() {
     elem.removeEventListener('click', logGreenDiv)
 
     pElem.removeEventListener('click', logGreyP, true)
-    pElem.removeEventListener('click', logGreyP)
+    pElem.removeEventListener('click', logGreenP)
 
     spanElem.removeEventListener('click', logGreySpan, true)
-    spanElem.removeEventListener('click', logGreySpan)
+    spanElem.removeEventListener('click', logGreenSpan)
 }
 const btnRemoveElem = document.querySelector('.remove-handlers-btn')
 btnRemoveElem.addEventListener('click', turnOffElement);
