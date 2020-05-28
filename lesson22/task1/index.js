@@ -35,21 +35,21 @@ elem.addEventListener('click', logGreyDiv, true)
 elem.addEventListener('click', logGreenDiv)
 
 pElem.addEventListener('click', logGreyP, true)
-pElem.addEventListener('click', logGreyP)
+pElem.addEventListener('click', logGreenP)
 
 spanElem.addEventListener('click', logGreySpan, true)
-spanElem.addEventListener('click', logGreySpan)
+spanElem.addEventListener('click', logGreenSpan)
 
 
 //clear
 
 
 function clearNullEvents() {
-    listElem.innerHTML = null
+    listElem.innerHTML = null;
 };
 
-const listElem = document.querySelector('.events-list')
-const btnElem = document.querySelector('.clear-btn')
+const btnElem = document.querySelector('.clear-btn');
+const listElem = document.querySelector('.events-list');
 
 btnElem.addEventListener('click', clearNullEvents)
 
