@@ -53,14 +53,14 @@ btnElem.addEventListener('click', clearNullEvents);
 
 
 function turnOffElement() {
-    elem.addEventListener('click', logGreyDiv, true);
-    elem.addEventListener('click', logGreenDiv);
+    elem.removeEventListener('click', logGreyDiv, true);
+    elem.removeEventListener('click', logGreenDiv);
 
-    pElem.addEventListener('click', logGreyP, true);
-    pElem.addEventListener('click', logGreyP);
+    pElem.removeEventListener('click', logGreyP, true);
+    pElem.removeEventListener('click', logGreyP);
 
-    spanElem.addEventListener('click', logGreySpan, true);
-    spanElem.addEventListener('click', logGreySpan);
+    spanElem.removeEventListener('click', logGreySpan, true);
+    spanElem.removeEventListener('click', logGreySpan);
 }
 const btnRemoveElem = document.querySelector('.remove-handlers-btn');
 btnRemoveElem.addEventListener('click', turnOffElement);
