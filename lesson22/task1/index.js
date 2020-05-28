@@ -48,8 +48,8 @@ function clearNullEvents() {
     listElem.innerHTML = null;
 };
 
-const btnElem = document.querySelector('.clear-btn');
-const listElem = document.querySelector('.events-list');
+const listElem = document.querySelector('.events-list')
+const btnElem = document.querySelector('.clear-btn')
 
 btnElem.addEventListener('click', clearNullEvents)
 
