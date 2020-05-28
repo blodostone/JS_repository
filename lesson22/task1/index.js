@@ -44,12 +44,13 @@ spanElem.addEventListener('click', logGreySpan);
 //clear
 
 
-const clearNullEvents = () => {
+function clearNullEvents() {
     listElem.innerHTML = null;
 };
 
 const listElem = document.querySelector('.events-list');
 const btnElem = document.querySelector('.clear-btn');
+
 btnElem.addEventListener('click', clearNullEvents);
 
 
