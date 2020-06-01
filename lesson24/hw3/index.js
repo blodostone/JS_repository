@@ -57,6 +57,8 @@ function onToggleTask(event) {
     }
     let task = tasks.find(task => task.id === event.target.dataset.id);
     task.done = event.target.checked;
+    task.finishDate = new Date().toISOString();
+
 
     renderTasks(tasks);
 
