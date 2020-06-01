@@ -60,7 +60,7 @@ function onToggleTask(event) {
     // task.finishDate = new Date().toString();
     Object.assign(task, {
         done: event.target.checked,
-        finishDate: new Date().toString()
+        finishDate: new Date().toISOString()
     });
 
 
@@ -92,10 +92,10 @@ function onCreateTask() {
 
     tasks.push({
         done: false,
-        createData: new Date().toString(),
+        createData: new Date().toISOString(),
         text: inputValue,
         id: Math.random().toString(),
-        finishDate: new Date().toString()
+        finishDate: new Date().toISOString()
     });
 
 
