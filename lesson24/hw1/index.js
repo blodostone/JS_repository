@@ -20,11 +20,11 @@ export const getDiff = (startDate, endDate) => {
     const secElem = Math.floor((absElem % min) / sec);
     // console.log(secElem)
     // console.log(hourElem)
-    return `day:${dayElem}, hour:${hourElem}, min:${minElem}, sec:${secElem}.`;
+    return `${dayElem}d ${hourElem}h ${minElem}m ${secElem}s`;
 };
 
-// const result = getDiff(
-//     new Date(2019, 5, 13, 3, 24, 0),
-//     new Date(2019, 11, 17, 12, 12, 0)
-// );
+const result = getDiff(
+    new Date(2019, 5, 13, 3, 24, 0),
+    new Date(2019, 11, 17, 12, 12, 0)
+);
 // console.log(result);
