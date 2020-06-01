@@ -3,53 +3,56 @@ const listElem = document.querySelector('.list');
 const tasks = [{
         text: 'Buy milk',
         done: false,
-        createDate: '2019-10-24T15:51:32.222Z',
+        createData: new Date().toISOString(),
         finishDate: null,
         id: '1'
     },
     {
         text: 'Pick up Tom from airport',
         done: false,
-        createDate: '2019-10-25T15:51:32.222Z',
+        createData: new Date().toISOString(),
         finishDate: null,
         id: '2'
     },
     {
         text: 'Visit party',
         done: false,
-        createDate: '2019-10-26T15:51:32.222Z',
+        createData: new Date().toISOString(),
         finishDate: null,
         id: '3'
     },
     {
         text: 'Visit doctor',
         done: true,
-        createDate: '2019-10-27T15:51:32.222Z',
-        finishDate: '2019-11-27T15:51:32.222Z',
+        createData: new Date().toISOString(),
+        finishDate: new Date().toISOString(),
         id: '4'
     },
     {
         text: 'Buy meat',
         done: true,
-        createDate: '2019-10-28T15:51:32.222Z',
-        finishDate: '2019-11-28T15:51:32.222Z',
+        createData: new Date().toISOString(),
+        finishDate: new Date().toISOString(),
         id: '5'
     },
 ];
+
+
+const compareTasks = (a, b) => {
+    if (a.done - b.done !== 0) {
+        return a.done - b.done;
+    };
+    if (a.done) {
+        return new Date(b.finishDate) - new Date(a.finishDate);
+    }
+    return new Date(b.createDate) - new Date(a.createDate);
+};
 
 const renderTasks = tasksList => {
     listElem.innerHTML = '';
     const tasksElems = tasksList
         .slice()
-        .sort((a, b) => {
-            if (a.done - b.done !== 0) {
-                return a.done - b.done;
-            }
-            if (a.done) {
-                return new Date(b.finishDate) - new Date(a.finishDate);
-            }
-            return new Date(b.createDate) - new Date(a.createDate);
-        })
+        .sort(compareTasks)
         .map(({ text, done, id }) => {
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
@@ -85,12 +88,15 @@ function onToggleTask(event) {
         return;
     }
     const task = tasks.find(task => task.id === event.target.dataset.id);
-    // task.done = event.target.checked;
-    // task.finishDate = new Date().toString();
-    Object.assign(task, {
-        done: event.target.checked,
-        finishDate: new Date().toISOString()
-    });
+    task.done = event.target.checked;
+    // // task.finishDate = new Date().toString();
+    // Object.assign(task, {
+    //     done: event.target.checked,
+    //     finishDate: new Date().toISOString()
+    // });
+    task.done ?
+        (task.finishDate = new Date().toISOString()) :
+        (task.finishDate = null);
 
 
     renderTasks(tasks);
