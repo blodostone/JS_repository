@@ -1,11 +1,11 @@
 const listElem = document.querySelector('.list');
 
 const tasks = [
-    { text: 'Buy milk', done: false, createDate: '2019-11-24T15:51:32.222Z', id: '1' },
-    { text: 'Pick up Tom from airport', done: false, createDate: '2019-11-25T15:51:32.222Z', id: '2' },
-    { text: 'Visit party', done: false, createDate: '2019-11-26T15:51:32.222Z', id: '3' },
-    { text: 'Visit doctor', done: true, createDate: '2019-11-27T15:51:32.222Z', id: '4' },
-    { text: 'Buy meat', done: true, createDate: '2019-11-28T15:51:32.222Z', id: '5' },
+    { text: 'Buy milk', done: false, finishDate: null, createDate: '2019-11-24T15:51:32.222Z', id: '1' },
+    { text: 'Pick up Tom from airport', done: false, finishDate: null, createDate: '2019-11-25T15:51:32.222Z', id: '2' },
+    { text: 'Visit party', done: false, finishDate: null, createDate: '2019-11-26T15:51:32.222Z', id: '3' },
+    { text: 'Visit doctor', done: true, finishDate: null, createDate: '2019-11-27T15:51:32.222Z', id: '4' },
+    { text: 'Buy meat', done: true, finishDate: null, createDate: '2019-11-28T15:51:32.222Z', id: '5' },
 ];
 
 const renderTasks = tasksList => {
@@ -88,7 +88,8 @@ function onCreateTask() {
         done: false,
         createData: new Date().toString(),
         text: inputValue,
-        id: Math.random().toString()
+        id: Math.random().toString(),
+        finishDate: new Date().toString()
     });
 
 
