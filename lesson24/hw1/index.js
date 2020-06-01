@@ -11,15 +11,15 @@ const sec = 1000;
 const min = sec * 60;
 const hour = min * 60;
 const day = hour * 24;
-export const getDiff = (startDate, finishDate) => {
-    const absElem = Math.abs(finishDate - startDate);
+export const getDiff = (startDate, endDate) => {
+    const absElem = Math.abs(endDate - startDate);
     const dayElem = Math.floor(absElem / day);
-    console.log(dayElem)
-    const secElem = Math.floor((absElem % min) / sec);
-    console.log(secElem)
-    const minElem = Math.floor((absElem % hour) / min);
+    // console.log(dayElem)
     const hourElem = Math.floor((absElem % day) / hour);
-    console.log(hourElem)
+    const minElem = Math.floor((absElem % hour) / min);
+    const secElem = Math.floor((absElem % min) / sec);
+    // console.log(secElem)
+    // console.log(hourElem)
     return `day:${dayElem}, hour:${hourElem}, min:${minElem}, sec:${secElem}.`;
 };
 
