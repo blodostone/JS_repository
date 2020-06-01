@@ -130,7 +130,7 @@ function onCreateTask() {
         createData: new Date().toISOString(),
         text: inputValue,
         id: Math.random().toString(),
-        finishDate: new Date().toISOString()
+        finishDate: null,
     });
 
 
