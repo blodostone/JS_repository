@@ -3,36 +3,36 @@ const listElem = document.querySelector('.list');
 const tasks = [{
         text: 'Buy milk',
         done: false,
-        finishDate: null,
         createDate: '2019-10-24T15:51:32.222Z',
+        finishDate: null,
         id: '1'
     },
     {
         text: 'Pick up Tom from airport',
         done: false,
-        finishDate: null,
         createDate: '2019-10-25T15:51:32.222Z',
+        finishDate: null,
         id: '2'
     },
     {
         text: 'Visit party',
         done: false,
-        finishDate: null,
         createDate: '2019-10-26T15:51:32.222Z',
+        finishDate: null,
         id: '3'
     },
     {
         text: 'Visit doctor',
         done: true,
-        finishDate: '2019-11-27T15:51:32.222Z',
         createDate: '2019-10-27T15:51:32.222Z',
+        finishDate: '2019-11-27T15:51:32.222Z',
         id: '4'
     },
     {
         text: 'Buy meat',
         done: true,
-        finishDate: '2019-11-28T15:51:32.222Z',
         createDate: '2019-10-28T15:51:32.222Z',
+        finishDate: '2019-11-28T15:51:32.222Z',
         id: '5'
     },
 ];
@@ -44,7 +44,7 @@ const renderTasks = tasksList => {
         .sort((a, b) => {
             if (a.done - b.done !== 0) {
                 return a.done - b.done;
-            };
+            }
             if (a.done) {
                 return new Date(b.finishDate) - new Date(a.finishDate);
             }
@@ -84,13 +84,13 @@ function onToggleTask(event) {
     if (!event.target.classList.contains('list__item-checkbox')) {
         return;
     }
-    let task = tasks.find(task => task.id === event.target.dataset.id);
-    task.done = event.target.checked;
-    task.finishDate = new Date().toString();
-    // Object.assign(task, {
-    //     done: event.target.checked,
-    //     finishDate: new Date().toISOString()
-    // });
+    const task = tasks.find(task => task.id === event.target.dataset.id);
+    // task.done = event.target.checked;
+    // task.finishDate = new Date().toString();
+    Object.assign(task, {
+        done: event.target.checked,
+        finishDate: new Date().toISOString()
+    });
 
 
     renderTasks(tasks);
