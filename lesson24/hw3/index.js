@@ -4,35 +4,35 @@ const tasks = [{
         text: "Buy milk",
         done: false,
         createDate: new Date().toISOString(),
-        finishDate: null,
+        doneDate: null,
         id: "1",
     },
     {
         text: "Pick up Tom from airport",
         done: false,
         createDate: new Date().toISOString(),
-        finishDate: null,
+        doneDate: null,
         id: "2",
     },
     {
         text: "Visit party",
         done: false,
         createDate: new Date().toISOString(),
-        finishDate: null,
+        doneDate: null,
         id: "3",
     },
     {
         text: "Visit doctor",
         done: true,
         createDate: new Date().toISOString(),
-        finishDate: new Date().toISOString(),
+        doneDate: new Date().toISOString(),
         id: "4",
     },
     {
         text: "Buy meat",
         done: true,
         createDate: new Date().toISOString(),
-        finishDate: new Date().toISOString(),
+        doneDate: new Date().toISOString(),
         id: "5",
     },
 ];
@@ -42,7 +42,7 @@ const compareTasks = (a, b) => {
         return a.done - b.done;
     }
     if (a.done) {
-        return new Date(b.finishDate) - new Date(a.finishDate);
+        return new Date(b.doneDate) - new Date(a.doneDate);
     }
     return new Date(b.createDate) - new Date(a.createDate);
 };
@@ -71,28 +71,23 @@ const renderTasks = (tasksList) => {
 
 renderTasks(tasks);
 
-todoListElem.addEventListener("click", onToggleTask);
-
-
-const onToggleTask = (event) => {
-    const isCheckbox = event.target.classList.contains("list__item-checkbox");
+const onToggleTask = (e) => {
+    const isCheckbox = e.target.classList.contains("list__item-checkbox");
 
     if (!isCheckbox) return;
 
-    const task = tasks.find((task) => task.id === event.target.dataset.id);
+    const taskData = tasks.find((task) => task.id === e.target.dataset.id);
 
-    task.done = event.target.checked;
-    task.done ?
-        (task.finishDate = new Date().toISOString()) :
-        (task.finishDate = null);
+    taskData.done = e.target.checked;
+    taskData.done ?
+        (taskData.doneDate = new Date().toISOString()) :
+        (taskData.doneDate = null);
 
     renderTasks(tasks);
 };
 
 const todoListElem = document.querySelector(".list");
-
-
-createBtnElem.addEventListener("click", onCreateTask);
+todoListElem.addEventListener("click", onToggleTask);
 
 const createBtnElem = document.querySelector(".create-task-btn");
 const onCreateTask = () => {
@@ -106,8 +101,10 @@ const onCreateTask = () => {
         text,
         done: false,
         createDate: new Date().toISOString(),
-        finishDate: null,
+        doneDate: null,
         id: Math.random().toString(),
     });
     renderTasks(tasks);
 };
+
+createBtnElem.addEventListener("click", onCreateTask);
