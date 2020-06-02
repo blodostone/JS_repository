@@ -15,4 +15,4 @@ export const getLocalStorageData = () => {
         };
     }, {});
 };
-// console.log(getLocalStorageData());
+console.log(getLocalStorageData());
