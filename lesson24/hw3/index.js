@@ -40,32 +40,30 @@ const tasks = [{
 const compareTasks = (a, b) => {
     if (a.done - b.done !== 0) {
         return a.done - b.done;
-    };
+    }
     if (a.done) {
         return new Date(b.finishDate) - new Date(a.finishDate);
     }
     return new Date(b.createDate) - new Date(a.createDate);
 };
 
-
-const renderTasks = tasksList => {
-    listElem.innerHTML = '';
+const renderTasks = (tasksList) => {
+    listElem.innerHTML = "";
     const tasksElems = tasksList
         .slice()
         .sort(compareTasks)
         .map(({ text, done, id }) => {
-            const listItemElem = document.createElement('li');
-            listItemElem.classList.add('list__item');
-            const checkbox = document.createElement('input');
-            checkbox.setAttribute('type', 'checkbox');
-            checkbox.setAttribute('data-id', id);
+            const listItemElem = document.createElement("li");
+            listItemElem.classList.add("list__item");
+            const checkbox = document.createElement("input");
+            checkbox.setAttribute("type", "checkbox");
+            checkbox.setAttribute("data-id", id);
             checkbox.checked = done;
-            checkbox.classList.add('list__item-checkbox');
+            checkbox.classList.add("list__item-checkbox");
             if (done) {
-                listItemElem.classList.add('list__item_done');
+                listItemElem.classList.add("list__item_done");
             }
             listItemElem.append(checkbox, text);
-
             return listItemElem;
         });
     listElem.append(...tasksElems);
@@ -73,13 +71,8 @@ const renderTasks = tasksList => {
 
 renderTasks(tasks);
 
+todoListElem.addEventListener("click", onToggleTask);
 
-
-// algo
-//1. find btn, input 
-//2. (if) for check input empty or not empty.
-//3. add new obj for list
-//4. render tasks
 
 const onToggleTask = (event) => {
     const isCheckbox = event.target.classList.contains("list__item-checkbox");
@@ -96,24 +89,19 @@ const onToggleTask = (event) => {
     renderTasks(tasks);
 };
 
+const todoListElem = document.querySelector(".list");
 
 
-const createBtnElem = document
-    .querySelector('.create-task-btn')
-    .addEventListener('click', onCreateTask);
+createBtnElem.addEventListener("click", onCreateTask);
 
-function onCreateTask() {
-    //TODO
-    const inputElem = document.querySelector('.task-input');
-    const inputValue = inputElem.value;
-    if (!inputValue) {
+const createBtnElem = document.querySelector(".create-task-btn");
+const onCreateTask = () => {
+    const taskTitleInputElem = document.querySelector(".task-input");
+    const text = taskTitleInputElem.value;
+    if (!text) {
         return;
     }
-
-    inputElem.value = '';
-
-    // const addLength = tasks.lenth++;
-
+    taskTitleInputElem.value = "";
     tasks.push({
         text,
         done: false,
