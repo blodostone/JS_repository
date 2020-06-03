@@ -28,4 +28,4 @@ export const calc = initValue => {
 
 const result = calc(3).add(2).mult(4).div(10).substract(5).result();
 
-// console.log(result);
+console.log(result);
