@@ -19,6 +19,8 @@ export const mult = a => b => a * b;
 
 export const twice = mult(2);
 
-const result = twice(4)
+// const result = twice(4)
 
-console.log(result);
+export const triple = mult(4);
+
+// console.log(result);
