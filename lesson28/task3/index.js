@@ -21,6 +21,6 @@ export const twice = mult(2);
 
 // const result = twice(4)
 
-export const triple = mult(4);
+export const triple = mult(3);
 
 // console.log(result);
