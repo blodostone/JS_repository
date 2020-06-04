@@ -5,7 +5,7 @@ export const addImage = (imgSrc, callback) => {
     const containerElem = document.querySelector('.page');
     containerElem.append(imgElem);
 
-    const omImageloaded = () => {
+    const onImageLoaded = () => {
         const { width, height } = imgElem;
         callback(null, { width, height });
     };
