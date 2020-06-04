@@ -17,14 +17,14 @@ export const addImage = (imgSrc, callback) => {
 
 const imgSrc = 'htttp://server.com/image.png';
 
-const onImageLoaded = (error, date) => {
-    if (error) {
-        console.log(error);
-        return;
-    }
-    const { width, height } = date;
-    const sizeElem = document.querySelector('.image-size');
-    sizeElem.textContent = `${width} x ${height}`
-}
+// const onImageLoaded = (error, date) => {
+//     if (error) {
+//         console.log(error);
+//         return;
+//     }
+//     const { width, height } = date;
+//     const sizeElem = document.querySelector('.image-size');
+//     sizeElem.textContent = `${width} x ${height}`
+// }
 
-addImage(imgSrc, onImageLoaded)
+// addImage(imgSrc, onImageLoaded)
