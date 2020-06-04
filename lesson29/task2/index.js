@@ -1,5 +1,6 @@
 export const pinger = (num, period) => {
     let g = num;
+    console.log('Ping');
 
     const interval = setInterval(() => {
         if (--g > 0) {
