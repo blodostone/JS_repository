@@ -2,7 +2,7 @@
 //output: obj
 
 
-const shmoment = (getDate) => {
+export const shmoment = (getDate) => {
     let result = new Date(getDate);
     const calculator = {
         add(data, value) {
