@@ -1,19 +1,22 @@
-const getValueWithDaley = (value, delay) => new Promise(resolve => {
-    setTimeout(() => {
-        console.log(value);
-        resolve(value);
-    }, delay)
-});
+export const asyncSum = (value, delay) =>
+    new Promise((resolve) => {
+        setTimeout(() => {
+            console.log(value);
+            resolve(value);
+        }, delay);
+    });
 
-const asyncNum1 = getValueWithDaley(56, 1000)
-const asyncNum2 = getValueWithDaley(undefined, 2000)
-const asyncNum3 = getValueWithDaley('9', 3000)
+const asyncNumber1 = asyncSum(56, 1000);
+const asyncNumber2 = asyncSum(undefined, 2000);
+const asyncNumber3 = asyncSum('9', 2000);
 
-export const asyncSum = (...asyncNumbers) => {
-    return Promise.allSettled(asyncNumbers)
-        .then(numbers => console.log(numbers))
+const getSum = (numbers) =>
+    numbers
+    .filter((value) => !isNaN(value))
+    .reduce((acc, num) => acc + Number(num), 0);
+const asyncSumNumber = (...asyncNumbers) =>
+    Promise.all(asyncNumbers).then((numbers) => getSum(numbers));
 
-}
-
-asyncSum(asyncNum1, Promise.reject(new Error('error')), asyncNum3)
-    .then(result => console.log(result))
+asyncSumNumber(asyncNumber1, asyncNumber2, asyncNumber3).then((result) =>
+    console.log(result)
+);
