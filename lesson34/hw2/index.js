@@ -37,7 +37,26 @@ function forSubmit(event) {
     const formData = [...new FormData(inputField)];
     const inputField = document.querySelector(formElem);
     const objectForm = Object.fromEntries(formData);
-    fetch(
+    fetch(baseUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(objectForm),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            const result = JSON.stringify(data);
+            alert(result);
+            if (result.length !== undefined) {
+                formElem.reset();
+            }
+            return result;
+        })
+        .catch(() => {
+                const errorElem = document.querySelector(".error-text");
+                errorElem.textContent = "Failed to create user";
+            }
 
-    );
+        );
 }
