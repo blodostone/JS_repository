@@ -3,39 +3,39 @@ const baseUrl = 'https://5ece5f5561c8480016701459.mockapi.io/api/v1/users';
 
 
 
-const formElem = document.querySelector('.login-form');
-const emailElem = document.querySelector('.form-input');
-emailElem.value;
-const passwordElem = document.querySelector('#password');
-passwordElem.value;
+const elementForm = document.querySelector(".login-form");
+const emailInput = document.querySelector("[type=email]");
+emailInput.value;
+const passwordInput = document.querySelector("[type=password]");
+passwordInput.value;
 
-const nameElem = document.querySelector('#text');
-nameElem.value;
+const nameInput = document.querySelector("[type=text]");
+nameInput.value;
 
-const btnElem = document.querySelector(".submit-button");
+const submitBtnElem = document.querySelector(".submit-button");
 const errorElem = document.querySelector(".error-text");
 
-const forChangeInput = () => {
-    const isValidForm = formElem.reportValidity();
+const onInputChange = () => {
+    const isValidForm = elementForm.reportValidity();
     if (isValidForm) {
-        btnElem.removeAttribute("disabled");
-        errorElem.textContent = '';
+        submitBtnElem.removeAttribute("disabled");
+        errorElem.textContent = "";
     } else {
-        btnElem.setAttribute('disabled', true);
-        errorElem.textContent = '';
+        submitBtnElem.setAttribute("disabled", true);
+        errorElem.textContent = "";
     }
 };
 
-nameElem.addEventListener('input', forChangeInput);
-emailElem.addEventListener('input', forChangeInput);
-passwordElem.addEventListener('input', forChangeInput);
-formElem.addEventListener('submit', forSubmit);
+emailInput.addEventListener("input", onInputChange);
+passwordInput.addEventListener("input", onInputChange);
+nameInput.addEventListener("input", onInputChange);
 
+elementForm.addEventListener("submit", runAfterSending);
 
-function forSubmit(event) {
+function runAfterSending(event) {
     event.preventDefault();
+    const inputField = document.querySelector(".login-form");
     const formData = [...new FormData(inputField)];
-    const inputField = document.querySelector(formElem);
     const objectForm = Object.fromEntries(formData);
     fetch(baseUrl, {
             method: "POST",
@@ -49,14 +49,12 @@ function forSubmit(event) {
             const result = JSON.stringify(data);
             alert(result);
             if (result.length !== undefined) {
-                formElem.reset();
+                elementForm.reset();
             }
             return result;
         })
         .catch(() => {
-                const errorElem = document.querySelector(".error-text");
-                errorElem.textContent = "Failed to create user";
-            }
-
-        );
+            const errorElem = document.querySelector(".error-text");
+            errorElem.textContent = "Failed to create user";
+        });
 }
