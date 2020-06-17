@@ -1,17 +1,13 @@
-export const fetchUserData = async userName => {
-    const response = await fetch(`https://api.github.com/users/${userName}`)
-    if (response.ok) {
-        return await response.json()
-    }
-    throw new Error('Failed to load data')
+const userNameElem = document.querySelector('.user__name');
+const userLocationElem = document.querySelector('.user__location');
+const userAvatarElem = document.querySelector('.user__avatar');
+
+
+
+export const renderUserData = userData => {
+    const { avatar_url, name, location } = userData;
+    userAvatarElem.src = avatar_url;
+    userNameElem.textContent = name;
+    userLocationElem.textContent = location ?
+        `from ${location}` : '';
 }
-
-
-
-export const fetchRepositories = async url => {
-    const response = await fetch(url);
-    if (response.ok) {
-        return await response.json()
-    }
-    throw new Error('Failed to load data')
-};
